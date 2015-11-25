@@ -35,7 +35,7 @@
 <link href="/css/main.css?v=0.4.5.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo,next" />
+  <meta name="keywords" content="Command Line,notes," />
 
 
 
@@ -51,19 +51,16 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="description" content="touch [filename] - create a new filepwd - print working directorycd - change directory">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="imwzq.com/2015/11/18/hello-world/index.html">
+<meta property="og:title" content="Command Lline 学习笔记">
+<meta property="og:url" content="imwzq.com/2015/11/25/Command-line-notes/index.html">
 <meta property="og:site_name" content="BlackLine">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
-<meta property="og:updated_time" content="2015-10-11T16:06:36.000Z">
+<meta property="og:description" content="touch [filename] - create a new filepwd - print working directorycd - change directory">
+<meta property="og:updated_time" content="2015-11-25T11:34:35.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="twitter:title" content="Command Lline 学习笔记">
+<meta name="twitter:description" content="touch [filename] - create a new filepwd - print working directorycd - change directory">
 
 
 
@@ -75,7 +72,7 @@ Quick">
   };
 </script>
 
-  <title> Hello World | BlackLine </title>
+  <title> Command Lline 学习笔记 | BlackLine </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -197,7 +194,7 @@ Quick">
             
             
               
-                Hello World
+                Command Lline 学习笔记
               
             
           </h1>
@@ -206,8 +203,8 @@ Quick">
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2015-11-18T17:09:56+08:00" content="2015-11-18">
-              2015-11-18
+            <time itemprop="dateCreated" datetime="2015-11-25T10:42:51+08:00" content="2015-11-25">
+              2015-11-25
             </time>
           </span>
 
@@ -230,38 +227,66 @@ Quick">
       
 
       
-        <span itemprop="articleBody"><p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2><a id="more"></a>
-<h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <span itemprop="articleBody"><p><code>touch [filename]</code> - create a new file<br><code>pwd</code> - print working directory<br><code>cd</code> - change directory<br><a id="more"></a></p>
+<h6 id="ls">ls</h6><p><code>-a</code> - lists all contents, including hidden files and directories</p>
+<hr>
+<p><code>-l</code> - lists all contents of a directory in long format<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ ls -l</span><br><span class="line">drwxr-xr-x <span class="number">5</span>  cc  eng  <span class="number">4096</span> Jun <span class="number">24</span> <span class="number">16</span>:<span class="number">51</span>  action</span><br><span class="line">drwxr-xr-x <span class="number">4</span>  cc  eng  <span class="number">4096</span> Jun <span class="number">24</span> <span class="number">16</span>:<span class="number">51</span>  comedy</span><br><span class="line">drwxr-xr-x <span class="number">6</span>  cc  eng  <span class="number">4096</span> Jun <span class="number">24</span> <span class="number">16</span>:<span class="number">51</span>  drama</span><br><span class="line">-rw-r--r-- <span class="number">1</span>  cc  eng     <span class="number">0</span> Jun <span class="number">24</span> <span class="number">16</span>:<span class="number">51</span>  genres.txt</span><br></pre></td></tr></table></figure></p>
+<p>1.==Access rights==. These are actions that are permitted on a file or directory.<br>2.==Number of hard links==. This number counts the number of child directories and files. This number includes the parent directory link (..) and current directory link (.).<br>3.==The username of the file’s owner==. Here the username is cc.<br>4.==The name of the group that owns the file==. Here the group name is eng.<br>5.The ==size== of the file in bytes.<br>6.The ==date &amp; time== that the file was ==last modified==.<br>7.The ==name== of the file or directory.</p>
+<hr>
+<p><code>-t</code> - order files and directories by the time they were last modified.<br><code>-alt</code> - multiple options are used together</p>
+<h3 id="cp">cp</h3><ul>
+<li><code>-[filename1] [filename2]</code> - copy the contents of filename1 into filename2.</li>
+<li><code>-[filename1] [filename2] [path]</code> - a new copy of filename1 and filename1 in [path] directory.</li>
+<li><code>-*</code> - copy all files</li>
+<li><code>-m*.txt</code> - copy all files starting with “m” and ending with “txt”<h3 id="mv">mv</h3></li>
+<li><code>-[filename1] [filename2]</code> - rename a file<h3 id="rm">rm</h3></li>
+<li>The rm command deletes files and directories.</li>
+<li>The <code>-r</code> is an option that modifies the behavior of the rm command. The -r stands for “recursive,” and it’s used to delete a directory and all of its child directories.</li>
+<li>Be careful when you use <code>rm</code>! It deletes files and directories permanently.<h3 id="cat_&gt;_&gt;&gt;_&lt;">cat &gt; &gt;&gt; &lt;</h3></li>
+<li><code>echo &quot;Hello&quot; &gt; hello.txt</code> - The <code>&gt;</code> command redirects the standard output to a file.</li>
+<li><code>cat hello.txt</code> - The <code>cat</code> command outputs the contents of a file to the terminal.</li>
+<li><code>cat oceans.txt &gt; continents.txt</code> - <code>&gt;</code> takes the standard output of the command on the left, and redirects it to the file on the right. Note that - - <code>&gt;</code> overwrites all original content in <strong>continents.txt</strong>.</li>
+<li><code>cat glaciers.txt &gt;&gt; rivers.txt</code> - <code>&gt;&gt;</code> takes the standard output of the command on the left and appends (adds) it to the file on the right.</li>
+<li><code>cat &lt; lakes.txt</code> - <code>&lt;</code> takes the standard input from the file on the right and inputs it into the program on the left.</li>
+<li><code>cat volcanoes.txt | wc</code> - <code>|</code> is a “pipe”. The <code>|</code> takes the standard output of the command on the left, and pipes it as standard input to the command on the right.</li>
+<li><code>wc</code> - <code>wc</code> command outputs the number of lines, words, and characters in volcanoes.txt, respectively.</li>
+<li><code>sort lakes.txt</code> - <code>sort</code> takes the standard input and orders it alphabetically for the standard output.</li>
+<li><code>uniq</code> - filter out adjacent, duplicate lines in a file.<h3 id="grep">grep</h3></li>
+<li><code>grep Mount mountains.txt</code> - <code>grep</code> stands for “global regular expression print”. It searches files for lines that match a pattern and returns the results.</li>
+<li><code>grep -i</code> - be case insensitive.</li>
+<li><code>grep -R</code> - searches all files in a directory and outputs filenames and lines containing matched results. -R stands for “recursive”</li>
+<li><code>grep -Rl</code> - searches all files in a directory and outputs only filenames with matched results. -R stands for “recursive” and l stands for “files with matches”.<h3 id="sed">sed</h3></li>
+<li><code>sed &#39;s/snow/rain/&#39; forests.txt</code> - <code>sed</code> stands for “stream editor”. It accepts standard input and modifies it based on an expression, before displaying it as output data. It is similar to “find and replace”.</li>
+<li><code>s</code> -  stands for “substitution”. it is always used when using sed for substitution.</li>
+<li><code>snow</code> -  the search string, the text to find.</li>
+<li><code>rain</code> -  the replacement string, the text to add in place.<br>the above command will only replace <strong>the first instance</strong> of “snow” on a line.</li>
+</ul>
 </span>
       
     </div>
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/Command-Line/" rel="tag">#Command Line</a>
+          
+            <a href="/tags/notes/" rel="tag">#notes</a>
+          
+        </div>
+      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/11/15/Html-notes/" rel="next" title="Html学习笔记">
-                <i class="fa fa-chevron-left"></i> Html学习笔记
+              <a href="/2015/11/21/Js-notes/" rel="next" title="Js学习笔记">
+                <i class="fa fa-chevron-left"></i> Js学习笔记
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2015/11/18/Md-notes/" rel="prev" title="Md学习笔记">
-                Md学习笔记 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
