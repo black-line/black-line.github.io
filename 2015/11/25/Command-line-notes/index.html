@@ -51,16 +51,25 @@
 
 
 
-<meta name="description" content="touch [filename] - create a new filepwd - print working directorycd - change directory">
+<meta name="description" content="touch [filename] - create a new filepwd - print working directorycd - change directory
+
+ls-a - lists all contents, including hidden files and directories
+-l - lists all contents of a directory in long">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Command Lline 学习笔记">
 <meta property="og:url" content="imwzq.com/2015/11/25/Command-line-notes/index.html">
 <meta property="og:site_name" content="BlackLine">
-<meta property="og:description" content="touch [filename] - create a new filepwd - print working directorycd - change directory">
-<meta property="og:updated_time" content="2015-11-25T11:34:35.000Z">
+<meta property="og:description" content="touch [filename] - create a new filepwd - print working directorycd - change directory
+
+ls-a - lists all contents, including hidden files and directories
+-l - lists all contents of a directory in long">
+<meta property="og:updated_time" content="2015-11-25T14:50:12.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Command Lline 学习笔记">
-<meta name="twitter:description" content="touch [filename] - create a new filepwd - print working directorycd - change directory">
+<meta name="twitter:description" content="touch [filename] - create a new filepwd - print working directorycd - change directory
+
+ls-a - lists all contents, including hidden files and directories
+-l - lists all contents of a directory in long">
 
 
 
@@ -227,22 +236,31 @@
       
 
       
-        <span itemprop="articleBody"><p><code>touch [filename]</code> - create a new file<br><code>pwd</code> - print working directory<br><code>cd</code> - change directory<br><a id="more"></a></p>
-<h6 id="ls">ls</h6><p><code>-a</code> - lists all contents, including hidden files and directories</p>
+        <span itemprop="articleBody"><p><code>touch [filename]</code> - create a new file<br><code>pwd</code> - print working directory<br><code>cd</code> - change directory</p>
 <hr>
+<h6 id="ls">ls</h6><p><code>-a</code> - lists all contents, including hidden files and directories</p>
 <p><code>-l</code> - lists all contents of a directory in long format<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ ls -l</span><br><span class="line">drwxr-xr-x <span class="number">5</span>  cc  eng  <span class="number">4096</span> Jun <span class="number">24</span> <span class="number">16</span>:<span class="number">51</span>  action</span><br><span class="line">drwxr-xr-x <span class="number">4</span>  cc  eng  <span class="number">4096</span> Jun <span class="number">24</span> <span class="number">16</span>:<span class="number">51</span>  comedy</span><br><span class="line">drwxr-xr-x <span class="number">6</span>  cc  eng  <span class="number">4096</span> Jun <span class="number">24</span> <span class="number">16</span>:<span class="number">51</span>  drama</span><br><span class="line">-rw-r--r-- <span class="number">1</span>  cc  eng     <span class="number">0</span> Jun <span class="number">24</span> <span class="number">16</span>:<span class="number">51</span>  genres.txt</span><br></pre></td></tr></table></figure></p>
 <p>1.==Access rights==. These are actions that are permitted on a file or directory.<br>2.==Number of hard links==. This number counts the number of child directories and files. This number includes the parent directory link (..) and current directory link (.).<br>3.==The username of the file’s owner==. Here the username is cc.<br>4.==The name of the group that owns the file==. Here the group name is eng.<br>5.The ==size== of the file in bytes.<br>6.The ==date &amp; time== that the file was ==last modified==.<br>7.The ==name== of the file or directory.</p>
-<hr>
 <p><code>-t</code> - order files and directories by the time they were last modified.<br><code>-alt</code> - multiple options are used together</p>
-<h3 id="cp">cp</h3><ul>
+<hr>
+<h3 id="cp">cp</h3><ol>
 <li><code>-[filename1] [filename2]</code> - copy the contents of filename1 into filename2.</li>
 <li><code>-[filename1] [filename2] [path]</code> - a new copy of filename1 and filename1 in [path] directory.</li>
 <li><code>-*</code> - copy all files</li>
-<li><code>-m*.txt</code> - copy all files starting with “m” and ending with “txt”<h3 id="mv">mv</h3></li>
-<li><code>-[filename1] [filename2]</code> - rename a file<h3 id="rm">rm</h3></li>
+<li><code>-m*.txt</code> - copy all files starting with “m” and ending with “txt”</li>
+</ol>
+<hr>
+<h3 id="mv">mv</h3><ol>
+<li><code>-[filename1] [filename2]</code> - rename a file</li>
+</ol>
+<hr>
+<h3 id="rm">rm</h3><ol>
 <li>The rm command deletes files and directories.</li>
 <li>The <code>-r</code> is an option that modifies the behavior of the rm command. The -r stands for “recursive,” and it’s used to delete a directory and all of its child directories.</li>
-<li>Be careful when you use <code>rm</code>! It deletes files and directories permanently.<h3 id="cat_&gt;_&gt;&gt;_&lt;">cat &gt; &gt;&gt; &lt;</h3></li>
+<li>Be careful when you use <code>rm</code>! It deletes files and directories permanently.</li>
+</ol>
+<hr>
+<h3 id="cat_&gt;_&gt;&gt;_&lt;">cat &gt; &gt;&gt; &lt;</h3><ol>
 <li><code>echo &quot;Hello&quot; &gt; hello.txt</code> - The <code>&gt;</code> command redirects the standard output to a file.</li>
 <li><code>cat hello.txt</code> - The <code>cat</code> command outputs the contents of a file to the terminal.</li>
 <li><code>cat oceans.txt &gt; continents.txt</code> - <code>&gt;</code> takes the standard output of the command on the left, and redirects it to the file on the right. Note that - - <code>&gt;</code> overwrites all original content in <strong>continents.txt</strong>.</li>
@@ -251,16 +269,40 @@
 <li><code>cat volcanoes.txt | wc</code> - <code>|</code> is a “pipe”. The <code>|</code> takes the standard output of the command on the left, and pipes it as standard input to the command on the right.</li>
 <li><code>wc</code> - <code>wc</code> command outputs the number of lines, words, and characters in volcanoes.txt, respectively.</li>
 <li><code>sort lakes.txt</code> - <code>sort</code> takes the standard input and orders it alphabetically for the standard output.</li>
-<li><code>uniq</code> - filter out adjacent, duplicate lines in a file.<h3 id="grep">grep</h3></li>
+<li><code>uniq</code> - filter out adjacent, duplicate lines in a file.</li>
+</ol>
+<hr>
+<h3 id="grep">grep</h3><ul>
 <li><code>grep Mount mountains.txt</code> - <code>grep</code> stands for “global regular expression print”. It searches files for lines that match a pattern and returns the results.</li>
+</ul>
+<ol>
 <li><code>grep -i</code> - be case insensitive.</li>
 <li><code>grep -R</code> - searches all files in a directory and outputs filenames and lines containing matched results. -R stands for “recursive”</li>
-<li><code>grep -Rl</code> - searches all files in a directory and outputs only filenames with matched results. -R stands for “recursive” and l stands for “files with matches”.<h3 id="sed">sed</h3></li>
-<li><code>sed &#39;s/snow/rain/&#39; forests.txt</code> - <code>sed</code> stands for “stream editor”. It accepts standard input and modifies it based on an expression, before displaying it as output data. It is similar to “find and replace”.</li>
+<li><code>grep -Rl</code> - searches all files in a directory and outputs only filenames with matched results. -R stands for “recursive” and l stands for “files with matches”.</li>
+</ol>
+<hr>
+<h3 id="sed">sed</h3><ul>
+<li><code>sed &#39;s/snow/rain/[g]&#39; forests.txt</code> - <code>sed</code> stands for “”. It accepts standard input and modifies it based on an expression, before displaying it as output data. It is similar to “find and replace”.</li>
+</ul>
+<ol>
 <li><code>s</code> -  stands for “substitution”. it is always used when using sed for substitution.</li>
 <li><code>snow</code> -  the search string, the text to find.</li>
 <li><code>rain</code> -  the replacement string, the text to add in place.<br>the above command will only replace <strong>the first instance</strong> of “snow” on a line.</li>
+<li><code>g</code> - means “global”</li>
+</ol>
+<hr>
+<h1 id="Enviroment">Enviroment</h1><hr>
+<p><strong>~/.bash_profile</strong> is the name of file used to store environment settings. It is commonly called the “bash profile”. When a session starts, it will load the contents of the bash profile before executing commands.</p>
+<ul>
+<li>The <code>~</code> represents the user’s home directory.</li>
+<li>The <code>.</code> indicates a hidden file.</li>
+<li>The name <strong>~/.bash_profile</strong> is important, since this is how the command line recognizes the bash profile.</li>
 </ul>
+<ol>
+<li>The command <code>nano ~/.bash_profile</code> opens up <strong>~/.bash_profile</strong> in nano.</li>
+<li>The text <code>echo &quot;Welcome, Jane Doe&quot;</code> creates a greeting in the bash profile, which is saved. It tells the command line to <code>echo</code> the string “Welcome, Jane Doe” when a terminal session begins.</li>
+<li>The command <code>source ~/.bash_profile</code> activates the changes in <strong>~/.bash_profile</strong> for the current session. Instead of closing the terminal and needing to start a new session, <code>source</code> makes the changes available right away in the session we are in.</li>
+</ol>
 </span>
       
     </div>
