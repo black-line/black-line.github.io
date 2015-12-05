@@ -35,7 +35,7 @@
 <link href="/css/main.css?v=0.4.5.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Command Line,notes," />
+  <meta name="keywords" content="notes,wireshark," />
 
 
 
@@ -51,16 +51,16 @@
 
 
 
-<meta name="description" content="touch [filename] - create a new filepwd - print working directorycd - change directory">
+<meta name="description" content="安装坎坷的安装过程 我的天。。从这里下载源码。解压tar -xvf wireshark-2.0.0.tar.bz2检查wireshark的依赖关系cd wireshark-2.0.0./config发现一堆问题。。。。。。。。。。。。。。。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Command Lline 学习笔记">
-<meta property="og:url" content="imwzq.com/2015/11/25/Command-line-notes/index.html">
+<meta property="og:title" content="Wireshark-notes">
+<meta property="og:url" content="imwzq.com/2015/12/05/Wireshark-notes/index.html">
 <meta property="og:site_name" content="BlackLine">
-<meta property="og:description" content="touch [filename] - create a new filepwd - print working directorycd - change directory">
-<meta property="og:updated_time" content="2015-12-05T00:36:56.000Z">
+<meta property="og:description" content="安装坎坷的安装过程 我的天。。从这里下载源码。解压tar -xvf wireshark-2.0.0.tar.bz2检查wireshark的依赖关系cd wireshark-2.0.0./config发现一堆问题。。。。。。。。。。。。。。。">
+<meta property="og:updated_time" content="2015-12-05T00:34:23.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Command Lline 学习笔记">
-<meta name="twitter:description" content="touch [filename] - create a new filepwd - print working directorycd - change directory">
+<meta name="twitter:title" content="Wireshark-notes">
+<meta name="twitter:description" content="安装坎坷的安装过程 我的天。。从这里下载源码。解压tar -xvf wireshark-2.0.0.tar.bz2检查wireshark的依赖关系cd wireshark-2.0.0./config发现一堆问题。。。。。。。。。。。。。。。">
 
 
 
@@ -72,7 +72,7 @@
   };
 </script>
 
-  <title> Command Lline 学习笔记 | BlackLine </title>
+  <title> Wireshark-notes | BlackLine </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -194,7 +194,7 @@
             
             
               
-                Command Lline 学习笔记
+                Wireshark-notes
               
             
           </h1>
@@ -203,8 +203,8 @@
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2015-11-25T10:42:51+08:00" content="2015-11-25">
-              2015-11-25
+            <time itemprop="dateCreated" datetime="2015-12-05T01:08:48+08:00" content="2015-12-05">
+              2015-12-05
             </time>
           </span>
 
@@ -227,74 +227,41 @@
       
 
       
-        <span itemprop="articleBody"><p><code>touch [filename]</code> - create a new file<br><code>pwd</code> - print working directory<br><code>cd</code> - change directory</p>
-<a id="more"></a>
-<hr>
-<h6 id="ls">ls</h6><p><code>-a</code> - lists all contents, including hidden files and directories</p>
-<p><code>-l</code> - lists all contents of a directory in long format<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ ls -l</span><br><span class="line">drwxr-xr-x <span class="number">5</span>  cc  eng  <span class="number">4096</span> Jun <span class="number">24</span> <span class="number">16</span>:<span class="number">51</span>  action</span><br><span class="line">drwxr-xr-x <span class="number">4</span>  cc  eng  <span class="number">4096</span> Jun <span class="number">24</span> <span class="number">16</span>:<span class="number">51</span>  comedy</span><br><span class="line">drwxr-xr-x <span class="number">6</span>  cc  eng  <span class="number">4096</span> Jun <span class="number">24</span> <span class="number">16</span>:<span class="number">51</span>  drama</span><br><span class="line">-rw-r--r-- <span class="number">1</span>  cc  eng     <span class="number">0</span> Jun <span class="number">24</span> <span class="number">16</span>:<span class="number">51</span>  genres.txt</span><br></pre></td></tr></table></figure></p>
-<p>1.==Access rights==. These are actions that are permitted on a file or directory.<br>2.==Number of hard links==. This number counts the number of child directories and files. This number includes the parent directory link (..) and current directory link (.).<br>3.==The username of the file’s owner==. Here the username is cc.<br>4.==The name of the group that owns the file==. Here the group name is eng.<br>5.The ==size== of the file in bytes.<br>6.The ==date &amp; time== that the file was ==last modified==.<br>7.The ==name== of the file or directory.</p>
-<p><code>-t</code> - order files and directories by the time they were last modified.<br><code>-alt</code> - multiple options are used together</p>
-<hr>
-<h3 id="cp">cp</h3><ol>
-<li><code>-[filename1] [filename2]</code> - copy the contents of filename1 into filename2.</li>
-<li><code>-[filename1] [filename2] [path]</code> - a new copy of filename1 and filename1 in [path] directory.</li>
-<li><code>-*</code> - copy all files</li>
-<li><code>-m*.txt</code> - copy all files starting with “m” and ending with “txt”</li>
-</ol>
-<hr>
-<h3 id="mv">mv</h3><ol>
-<li><code>-[filename1] [filename2]</code> - rename a file</li>
-</ol>
-<hr>
-<h3 id="rm">rm</h3><ol>
-<li>The rm command deletes files and directories.</li>
-<li>The <code>-r</code> is an option that modifies the behavior of the rm command. The -r stands for “recursive,” and it’s used to delete a directory and all of its child directories.</li>
-<li>Be careful when you use <code>rm</code>! It deletes files and directories permanently.</li>
-</ol>
-<hr>
-<h3 id="cat_&gt;_&gt;&gt;_&lt;">cat &gt; &gt;&gt; &lt;</h3><ol>
-<li><code>echo &quot;Hello&quot; &gt; hello.txt</code> - The <code>&gt;</code> command redirects the standard output to a file.</li>
-<li><code>cat hello.txt</code> - The <code>cat</code> command outputs the contents of a file to the terminal.</li>
-<li><code>cat oceans.txt &gt; continents.txt</code> - <code>&gt;</code> takes the standard output of the command on the left, and redirects it to the file on the right. Note that - - <code>&gt;</code> overwrites all original content in <strong>continents.txt</strong>.</li>
-<li><code>cat glaciers.txt &gt;&gt; rivers.txt</code> - <code>&gt;&gt;</code> takes the standard output of the command on the left and appends (adds) it to the file on the right.</li>
-<li><code>cat &lt; lakes.txt</code> - <code>&lt;</code> takes the standard input from the file on the right and inputs it into the program on the left.</li>
-<li><code>cat volcanoes.txt | wc</code> - <code>|</code> is a “pipe”. The <code>|</code> takes the standard output of the command on the left, and pipes it as standard input to the command on the right.</li>
-<li><code>wc</code> - <code>wc</code> command outputs the number of lines, words, and characters in volcanoes.txt, respectively.</li>
-<li><code>sort lakes.txt</code> - <code>sort</code> takes the standard input and orders it alphabetically for the standard output.</li>
-<li><code>uniq</code> - filter out adjacent, duplicate lines in a file.</li>
-</ol>
-<hr>
-<h3 id="grep">grep</h3><ul>
-<li><code>grep Mount mountains.txt</code> - <code>grep</code> stands for “global regular expression print”. It searches files for lines that match a pattern and returns the results.</li>
-</ul>
+        <span itemprop="articleBody"><h3 id="安装">安装</h3><p>坎坷的安装过程 我的天。。<br>从<a href="https://www.wireshark.org/download.html" target="_blank" rel="external">这里</a>下载源码。<br>解压<br><code>tar -xvf wireshark-2.0.0.tar.bz2</code><br>检查wireshark的依赖关系<br><code>cd wireshark-2.0.0</code><br><code>./config</code><br>发现一堆问题。。。。。。。。。。。。。。。<br><a id="more"></a></p>
 <ol>
-<li><code>grep -i</code> - be case insensitive.</li>
-<li><code>grep -R</code> - searches all files in a directory and outputs filenames and lines containing matched results. -R stands for “recursive”</li>
-<li><code>grep -Rl</code> - searches all files in a directory and outputs only filenames with matched results. -R stands for “recursive” and l stands for “files with matches”.</li>
+<li>缺少yacc (or bison or …)<code>-yacc(Yet Another Compiler Compiler)，是Unix/Linux上一个用来生成编译器的编译器（编译器代码生成器）。
+解决</code>sudo apt-get install flex bison`</li>
+<li>缺少Qt<br>解决<br><code>sudo apt-get install libqt4-dev</code> -听说要Qt5但是qt4也能用</li>
+<li>缺少GTK+ 3<br>解决<br><code>sudo apt-get install libgtk-3-dev</code></li>
+<li>缺少pcap.h等文件<br>解决<br><a href="http://www.tcpdump.org/#latest-release" target="_blank" rel="external">下载源码</a>libpcap-1.7.4.tar.gz<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">tar -xvf libpcap-<span class="number">1.7</span>.<span class="number">4</span><span class="class">.tar</span><span class="class">.gz</span></span><br><span class="line">cd libpcap-<span class="number">1.0</span>.<span class="number">0</span><span class="class">.tar</span><span class="class">.gz</span></span><br><span class="line">./configure</span><br><span class="line">make</span><br><span class="line">sudo make install</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>终于到了<code>./configure</code>没有问题 可以安装wireshark的时候<br>看到<br>安装Checkinstall以便管理您系统中直接由源代码编译安装的软件。</p>
+<h2 id="google一下">google一下</h2><p>Checkinstall is an extremely useful tool that helps when installing software after their compilation.<br>When a software is compiled, the following well known commands are used:</p>
+<p><code>#./configure</code><br><code>#make</code><br><code>#make install</code></p>
+<p>There are two majors problems with this way of installing programs:</p>
+<ol>
+<li>The “make uninstall” command is very often not available and thus you cannot uninstall the program.</li>
+<li>You don’t have any tracking of the installed program.<br>All these problems are solved with CheckInstall, which replaces “make install” as shown below.</li>
+</ol>
+<p><code>#./configure</code><br><code>#make</code><br><code>#checkinstall</code></p>
+<p>Checkinstall executes the “make install” command, creates a Debian package and installs it with the “dpkg -i” command. This new Debian package is copied on the hard drive at the same time. You can use this package on another computer without having to compile the software again.<br>As the install has been done with a Debian package, it is now possible to use all the dpkg commands such as “dpkg -L” to see the installed files of a software or “dpkg -r” to uninstall a program very easily.<br>Please note that like “make install”, the checkinstall command must be launched by the root user.</p>
+<p>To install CheckInstall:</p>
+<p>sudo apt-get install checkinstall</p>
+<hr>
+<p>简单来说。好处:</p>
+<ol>
+<li>因为<code>make uninstall</code>命令经常找不到，所以checkinstall便于卸载用源码编译的文件而不用让用户寻找软件安装目录<br>原因:<br>Checkinstall执行<code>make install</code>命令，创建一个Debian软件包，并用“dpkg -i来”命令进行安装。这种新的Debian软件包被创建在当前目录下。你可以在其他电脑上使用这个安装包，而无需重新编译软件。由于用Debian包安装，可以使用所有的dpkg命令，如<code>dpkg的-L</code>查看已安装的软件或<code>dpkg-r</code>很卸载程序。<strong>注意</strong>,就像<code>make install</code>一样，<code>checkinstall</code>必须在root权限下使用。<br>安装<br><code>sudo apt-get install checkinstall</code></li>
 </ol>
 <hr>
-<h3 id="sed">sed</h3><ul>
-<li><code>sed &#39;s/snow/rain/[g]&#39; forests.txt</code> - <code>sed</code> stands for “”. It accepts standard input and modifies it based on an expression, before displaying it as output data. It is similar to “find and replace”.</li>
-</ul>
-<ol>
-<li><code>s</code> -  stands for “substitution”. it is always used when using sed for substitution.</li>
-<li><code>snow</code> -  the search string, the text to find.</li>
-<li><code>rain</code> -  the replacement string, the text to add in place.<br>the above command will only replace <strong>the first instance</strong> of “snow” on a line.</li>
-<li><code>g</code> - means “global”</li>
-</ol>
+<p>经过漫长的等待，wireshark终于编译完成了<br>但是。。。。。。。<br>出于安全方面的考虑，普通用户不能够打开网卡设备进行抓包，wireshark不建议用户通过sudo在root权限下运行<br>wireshark为ubuntu（Debian）用户提供了一种在非root下的解决方法。<br>（详细解释可以参考：/usr/share/doc/wireshark-common/README.Debian）<br>具体步骤：<br><code>sudo dpkg-reconfigure wireshark-common</code><br>选择Yes<br>在组策略中会出现wireshark组，默认没有任何用户属于这个组，只需把特定的用户加入组中（需要注销后重新登录来使设置生效）<br>就可以以该用户来运行wireshark实时抓网络数据包<br>在wireshark组后添加用户,若用户名user<br><code>sudo usermod -a -G wireshark user</code><br>万万没想到。。wireshark-common没装。。也不知道哪一步出错了。。<br>查看apt-get中wireshark版本。老。<br>最后<br><code>sudo add-apt-repository ppa:wireshark-dev/stable</code><br><code>sudo apt-get update; sudo apt-get install wireshark</code><br>这样就更新到了最新的2.0.0版本。<br>再用之前提到的<br><code>sudo dpkg-reconfigure wireshark-common</code><br><code>sudo usermod -a -G wireshark user</code><br>注销重新登录就生效了。</p>
+<p>直接复制 没看过供参考</p>
 <hr>
-<h1 id="Enviroment">Enviroment</h1><hr>
-<p><strong>~/.bash_profile</strong> is the name of file used to store environment settings. It is commonly called the “bash profile”. When a session starts, it will load the contents of the bash profile before executing commands.</p>
-<ul>
-<li>The <code>~</code> represents the user’s home directory.</li>
-<li>The <code>.</code> indicates a hidden file.</li>
-<li>The name <strong>~/.bash_profile</strong> is important, since this is how the command line recognizes the bash profile.</li>
-</ul>
-<ol>
-<li>The command <code>nano ~/.bash_profile</code> opens up <strong>~/.bash_profile</strong> in nano.</li>
-<li>The text <code>echo &quot;Welcome, Jane Doe&quot;</code> creates a greeting in the bash profile, which is saved. It tells the command line to <code>echo</code> the string “Welcome, Jane Doe” when a terminal session begins.</li>
-<li>The command <code>source ~/.bash_profile</code> activates the changes in <strong>~/.bash_profile</strong> for the current session. Instead of closing the terminal and needing to start a new session, <code>source</code> makes the changes available right away in the session we are in.</li>
-</ol>
+<p>但是用ppa安装后会出现一些有关权限的问题，可以用下面的方法解决：<br>If you run wireshark as a non root user at this stage (see image above), you will get the message “No interface can be used for capturing in this system with the current configuration.”. The following steps will rectify this.</p>
+<p>Create the wireshark group.</p>
+<p><code>sudo groupadd wireshark</code><br>Add your username to the wireshark group<br><code>sudo usermod -a -G wireshark YOUR_USER_NAME</code><br>Change the group  ownership of file dumpcap to wireshark<br><code>sudo chgrp wireshark /usr/bin/dumpcap</code><br>Change the mode of the file dumpcap to allow execution by the group wireshark<br><code>sudo chmod 750 /usr/bin/dumpcap</code><br>Grant capabilities with setcap<br><code>sudo setcap cap_net_raw,cap_net_admin=eip /usr/bin/dumpcap</code><br>Verify the change<br><code>sudo getcap /usr/bin/dumpcap</code><br>At this point, you will need to log out, then back into Unity (Thanks for Jorge for pointing this out).<br>方法三：如果想装最新的wireshark版本，可以用下面的ppa:<br>The latest Wireshark version available is Wireshark 1.11.0, which can be installed from a PPA. To install Wireshark on Ubuntu, Linux Mint and Debian, do this:</p>
+<p><code>$ sudo add-apt-repository ppa:dreibh/ppa</code><br><code>$ sudo apt-get update</code><br><code>$ sudo apt-get install wireshar</code><br>To start wiresharking, just type nohup wireshark &amp;&gt; /dev/null &amp; in your terminal.</p>
+<hr>
 </span>
       
     </div>
@@ -303,9 +270,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Command-Line/" rel="tag">#Command Line</a>
-          
             <a href="/tags/notes/" rel="tag">#notes</a>
+          
+            <a href="/tags/wireshark/" rel="tag">#wireshark</a>
           
         </div>
       
@@ -314,17 +281,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/11/21/Js-notes/" rel="next" title="Js学习笔记">
-                <i class="fa fa-chevron-left"></i> Js学习笔记
+              <a href="/2015/12/02/Spider-notes/" rel="next" title="Spider-notes">
+                <i class="fa fa-chevron-left"></i> Spider-notes
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2015/12/02/Spider-notes/" rel="prev" title="Spider-notes">
-                Spider-notes <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>

@@ -35,7 +35,7 @@
 <link href="/css/main.css?v=0.4.5.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Command Line,notes," />
+  <meta name="keywords" content="notes,spider," />
 
 
 
@@ -51,16 +51,16 @@
 
 
 
-<meta name="description" content="touch [filename] - create a new filepwd - print working directorycd - change directory">
+<meta name="description" content="import urllib.requestimport urllib.request -aurllib.request module uses HTTP/1.1 and includes Connection:close header in its HTTP requests.12urllib.request.urlopen(url, data=None, [timeout, ]*, cafile">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Command Lline 学习笔记">
-<meta property="og:url" content="imwzq.com/2015/11/25/Command-line-notes/index.html">
+<meta property="og:title" content="Spider-notes">
+<meta property="og:url" content="imwzq.com/2015/12/02/Spider-notes/index.html">
 <meta property="og:site_name" content="BlackLine">
-<meta property="og:description" content="touch [filename] - create a new filepwd - print working directorycd - change directory">
-<meta property="og:updated_time" content="2015-12-05T00:36:56.000Z">
+<meta property="og:description" content="import urllib.requestimport urllib.request -aurllib.request module uses HTTP/1.1 and includes Connection:close header in its HTTP requests.12urllib.request.urlopen(url, data=None, [timeout, ]*, cafile">
+<meta property="og:updated_time" content="2015-12-05T00:35:12.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Command Lline 学习笔记">
-<meta name="twitter:description" content="touch [filename] - create a new filepwd - print working directorycd - change directory">
+<meta name="twitter:title" content="Spider-notes">
+<meta name="twitter:description" content="import urllib.requestimport urllib.request -aurllib.request module uses HTTP/1.1 and includes Connection:close header in its HTTP requests.12urllib.request.urlopen(url, data=None, [timeout, ]*, cafile">
 
 
 
@@ -72,7 +72,7 @@
   };
 </script>
 
-  <title> Command Lline 学习笔记 | BlackLine </title>
+  <title> Spider-notes | BlackLine </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -194,7 +194,7 @@
             
             
               
-                Command Lline 学习笔记
+                Spider-notes
               
             
           </h1>
@@ -203,8 +203,8 @@
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2015-11-25T10:42:51+08:00" content="2015-11-25">
-              2015-11-25
+            <time itemprop="dateCreated" datetime="2015-12-02T20:43:42+08:00" content="2015-12-02">
+              2015-12-02
             </time>
           </span>
 
@@ -227,74 +227,20 @@
       
 
       
-        <span itemprop="articleBody"><p><code>touch [filename]</code> - create a new file<br><code>pwd</code> - print working directory<br><code>cd</code> - change directory</p>
-<a id="more"></a>
-<hr>
-<h6 id="ls">ls</h6><p><code>-a</code> - lists all contents, including hidden files and directories</p>
-<p><code>-l</code> - lists all contents of a directory in long format<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ ls -l</span><br><span class="line">drwxr-xr-x <span class="number">5</span>  cc  eng  <span class="number">4096</span> Jun <span class="number">24</span> <span class="number">16</span>:<span class="number">51</span>  action</span><br><span class="line">drwxr-xr-x <span class="number">4</span>  cc  eng  <span class="number">4096</span> Jun <span class="number">24</span> <span class="number">16</span>:<span class="number">51</span>  comedy</span><br><span class="line">drwxr-xr-x <span class="number">6</span>  cc  eng  <span class="number">4096</span> Jun <span class="number">24</span> <span class="number">16</span>:<span class="number">51</span>  drama</span><br><span class="line">-rw-r--r-- <span class="number">1</span>  cc  eng     <span class="number">0</span> Jun <span class="number">24</span> <span class="number">16</span>:<span class="number">51</span>  genres.txt</span><br></pre></td></tr></table></figure></p>
-<p>1.==Access rights==. These are actions that are permitted on a file or directory.<br>2.==Number of hard links==. This number counts the number of child directories and files. This number includes the parent directory link (..) and current directory link (.).<br>3.==The username of the file’s owner==. Here the username is cc.<br>4.==The name of the group that owns the file==. Here the group name is eng.<br>5.The ==size== of the file in bytes.<br>6.The ==date &amp; time== that the file was ==last modified==.<br>7.The ==name== of the file or directory.</p>
-<p><code>-t</code> - order files and directories by the time they were last modified.<br><code>-alt</code> - multiple options are used together</p>
-<hr>
-<h3 id="cp">cp</h3><ol>
-<li><code>-[filename1] [filename2]</code> - copy the contents of filename1 into filename2.</li>
-<li><code>-[filename1] [filename2] [path]</code> - a new copy of filename1 and filename1 in [path] directory.</li>
-<li><code>-*</code> - copy all files</li>
-<li><code>-m*.txt</code> - copy all files starting with “m” and ending with “txt”</li>
-</ol>
-<hr>
-<h3 id="mv">mv</h3><ol>
-<li><code>-[filename1] [filename2]</code> - rename a file</li>
-</ol>
-<hr>
-<h3 id="rm">rm</h3><ol>
-<li>The rm command deletes files and directories.</li>
-<li>The <code>-r</code> is an option that modifies the behavior of the rm command. The -r stands for “recursive,” and it’s used to delete a directory and all of its child directories.</li>
-<li>Be careful when you use <code>rm</code>! It deletes files and directories permanently.</li>
-</ol>
-<hr>
-<h3 id="cat_&gt;_&gt;&gt;_&lt;">cat &gt; &gt;&gt; &lt;</h3><ol>
-<li><code>echo &quot;Hello&quot; &gt; hello.txt</code> - The <code>&gt;</code> command redirects the standard output to a file.</li>
-<li><code>cat hello.txt</code> - The <code>cat</code> command outputs the contents of a file to the terminal.</li>
-<li><code>cat oceans.txt &gt; continents.txt</code> - <code>&gt;</code> takes the standard output of the command on the left, and redirects it to the file on the right. Note that - - <code>&gt;</code> overwrites all original content in <strong>continents.txt</strong>.</li>
-<li><code>cat glaciers.txt &gt;&gt; rivers.txt</code> - <code>&gt;&gt;</code> takes the standard output of the command on the left and appends (adds) it to the file on the right.</li>
-<li><code>cat &lt; lakes.txt</code> - <code>&lt;</code> takes the standard input from the file on the right and inputs it into the program on the left.</li>
-<li><code>cat volcanoes.txt | wc</code> - <code>|</code> is a “pipe”. The <code>|</code> takes the standard output of the command on the left, and pipes it as standard input to the command on the right.</li>
-<li><code>wc</code> - <code>wc</code> command outputs the number of lines, words, and characters in volcanoes.txt, respectively.</li>
-<li><code>sort lakes.txt</code> - <code>sort</code> takes the standard input and orders it alphabetically for the standard output.</li>
-<li><code>uniq</code> - filter out adjacent, duplicate lines in a file.</li>
-</ol>
-<hr>
-<h3 id="grep">grep</h3><ul>
-<li><code>grep Mount mountains.txt</code> - <code>grep</code> stands for “global regular expression print”. It searches files for lines that match a pattern and returns the results.</li>
-</ul>
+        <span itemprop="articleBody"><h3 id="import_urllib-request">import urllib.request</h3><p><a href="https://docs.python.org/3/library/urllib.request.html#module-urllib.request" target="_blank" rel="external">import urllib.request</a> -aurllib.request module uses HTTP/1.1 and includes Connection:close header in its HTTP requests.<br><figure class="highlight fortran"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">urllib.request.urlopen(url, <span class="type">data</span>=<span class="type">None</span>, [timeout, ]*, cafile=<span class="type">None</span>, capath=<span class="type">None</span>, cadefault=False, context=<span class="type">None</span>)</span><br><span class="line"><span class="keyword">return</span>  http.client.HTTPResponse object</span><br></pre></td></tr></table></figure></p>
+<p>This function always returns an object which can work as context manager and has methods such as</p>
 <ol>
-<li><code>grep -i</code> - be case insensitive.</li>
-<li><code>grep -R</code> - searches all files in a directory and outputs filenames and lines containing matched results. -R stands for “recursive”</li>
-<li><code>grep -Rl</code> - searches all files in a directory and outputs only filenames with matched results. -R stands for “recursive” and l stands for “files with matches”.</li>
+<li>geturl() — return the URL of the resource retrieved, commonly used to determine if a redirect was followed(检查是否<strong>重定向</strong>)</li>
+<li>info() — return the <strong>meta-information</strong> of the page, such as headers, in the form of an email.message_from_string() instance (see Quick Reference to HTTP Headers)</li>
+<li>getcode() – return the HTTP <strong>status code</strong> of the response.<a id="more"></a>
+<h3 id="HTTPResponse_Objects">HTTPResponse Objects</h3><a href="https://docs.python.org/3/library/http.client.html#httpresponse-objects" target="_blank" rel="external">xx</a><br><code>.read()</code><br><code>.readinto(b)</code><br><code>getheader()</code><br><code>getheaders()</code><br>………….</li>
 </ol>
-<hr>
-<h3 id="sed">sed</h3><ul>
-<li><code>sed &#39;s/snow/rain/[g]&#39; forests.txt</code> - <code>sed</code> stands for “”. It accepts standard input and modifies it based on an expression, before displaying it as output data. It is similar to “find and replace”.</li>
-</ul>
-<ol>
-<li><code>s</code> -  stands for “substitution”. it is always used when using sed for substitution.</li>
-<li><code>snow</code> -  the search string, the text to find.</li>
-<li><code>rain</code> -  the replacement string, the text to add in place.<br>the above command will only replace <strong>the first instance</strong> of “snow” on a line.</li>
-<li><code>g</code> - means “global”</li>
-</ol>
-<hr>
-<h1 id="Enviroment">Enviroment</h1><hr>
-<p><strong>~/.bash_profile</strong> is the name of file used to store environment settings. It is commonly called the “bash profile”. When a session starts, it will load the contents of the bash profile before executing commands.</p>
-<ul>
-<li>The <code>~</code> represents the user’s home directory.</li>
-<li>The <code>.</code> indicates a hidden file.</li>
-<li>The name <strong>~/.bash_profile</strong> is important, since this is how the command line recognizes the bash profile.</li>
-</ul>
-<ol>
-<li>The command <code>nano ~/.bash_profile</code> opens up <strong>~/.bash_profile</strong> in nano.</li>
-<li>The text <code>echo &quot;Welcome, Jane Doe&quot;</code> creates a greeting in the bash profile, which is saved. It tells the command line to <code>echo</code> the string “Welcome, Jane Doe” when a terminal session begins.</li>
-<li>The command <code>source ~/.bash_profile</code> activates the changes in <strong>~/.bash_profile</strong> for the current session. Instead of closing the terminal and needing to start a new session, <code>source</code> makes the changes available right away in the session we are in.</li>
-</ol>
+<p><code>url</code> -string or Request Object<br><code>data</code> -<br><code>timeout</code> -a timeout in <strong>seconds</strong> for blocking operations like the connection attempt</p>
+<figure class="highlight oxygene"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> http.client.HTTPResponse(sock, debuglevel=<span class="number">0</span>, <span class="function"><span class="keyword">method</span>=<span class="title">None</span>, <span class="title">url</span>=<span class="title">None</span>)</span></span><br></pre></td></tr></table></figure>
+<h3 id="class_urllib-request-Request">class urllib.request.Request</h3><p><a href="https://docs.python.org/3/library/urllib.request.html?highlight=urllib.request.request#urllib.request.Request" target="_blank" rel="external">xx</a></p>
+<p><code>urllib.parse.urlencode(query, doseq=False, safe=&#39;&#39;, encoding=None, errors=None, quote_via=quote_plus)</code> -Convert a mapping object or a sequence of two-element tuples, which may contain str or bytes objects, to a percent-encoded ASCII text string. If the resultant string is to be used as a data for POST operation with the urlopen() function, then it should be <strong>encoded to bytes</strong>, otherwise it would result in a TypeError.</p>
+<h3 id="deque">deque</h3><p><code>from collections import deque</code> -<a href="https://docs.python.org/3/library/collections.html?highlight=deque#collections.deque" target="_blank" rel="external">deque</a><br><code>append(x) appendleft(x) clear()</code><br><code>copy()</code> -Create a shallow copy of the deque.<br><code>count(x)</code> -Count the number of deque elements equal to x.<br><code>extend(iterable) extendleft(iterable) index(x[,start[,stop]]) insert(i,x)</code><br><code>pop() popleft()</code> -or raises an IndexError<br><code>remove(value)</code> -Remove the first occurrence of value. If not found, raises a ValueError.<br><code>reserve() rotate(n)</code></p>
+<h3 id="set">set</h3><p><code>set</code> -<a href="https://docs.python.org/3/library/stdtypes.html?highlight=set#set" target="_blank" rel="external">xx</a></p>
 </span>
       
     </div>
@@ -303,9 +249,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Command-Line/" rel="tag">#Command Line</a>
-          
             <a href="/tags/notes/" rel="tag">#notes</a>
+          
+            <a href="/tags/spider/" rel="tag">#spider</a>
           
         </div>
       
@@ -314,16 +260,16 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/11/21/Js-notes/" rel="next" title="Js学习笔记">
-                <i class="fa fa-chevron-left"></i> Js学习笔记
+              <a href="/2015/11/25/Command-line-notes/" rel="next" title="Command Lline 学习笔记">
+                <i class="fa fa-chevron-left"></i> Command Lline 学习笔记
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2015/12/02/Spider-notes/" rel="prev" title="Spider-notes">
-                Spider-notes <i class="fa fa-chevron-right"></i>
+              <a href="/2015/12/05/Wireshark-notes/" rel="prev" title="Wireshark-notes">
+                Wireshark-notes <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>

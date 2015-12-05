@@ -202,6 +202,173 @@
             
               
                 
+                <a class="post-title-link" href="/2015/12/05/Wireshark-notes/" itemprop="url">
+                  Wireshark-notes
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2015-12-05T01:08:48+08:00" content="2015-12-05">
+              2015-12-05
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <h3 id="安装">安装</h3><p>坎坷的安装过程 我的天。。<br>从<a href="https://www.wireshark.org/download.html">这里</a>下载源码。<br>解压<br><code>tar -xvf wireshark-2.0.0.tar.bz2</code><br>检查wireshark的依赖关系<br><code>cd wireshark-2.0.0</code><br><code>./config</code><br>发现一堆问题。。。。。。。。。。。。。。。<br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2015/12/05/Wireshark-notes/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2015/12/02/Spider-notes/" itemprop="url">
+                  Spider-notes
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2015-12-02T20:43:42+08:00" content="2015-12-02">
+              2015-12-02
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <h3 id="import_urllib-request">import urllib.request</h3><p><a href="https://docs.python.org/3/library/urllib.request.html#module-urllib.request">import urllib.request</a> -aurllib.request module uses HTTP/1.1 and includes Connection:close header in its HTTP requests.<br><figure class="highlight fortran"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">urllib.request.urlopen(url, <span class="type">data</span>=<span class="type">None</span>, [timeout, ]*, cafile=<span class="type">None</span>, capath=<span class="type">None</span>, cadefault=False, context=<span class="type">None</span>)</span><br><span class="line"><span class="keyword">return</span>  http.client.HTTPResponse object</span><br></pre></td></tr></table></figure></p>
+<p>This function always returns an object which can work as context manager and has methods such as</p>
+<ol>
+<li>geturl() — return the URL of the resource retrieved, commonly used to determine if a redirect was followed(检查是否<strong>重定向</strong>)</li>
+<li>info() — return the <strong>meta-information</strong> of the page, such as headers, in the form of an email.message_from_string() instance (see Quick Reference to HTTP Headers)</li>
+<li>getcode() – return the HTTP <strong>status code</strong> of the response.
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2015/12/02/Spider-notes/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2015/11/25/Command-line-notes/" itemprop="url">
                   Command Lline 学习笔记
                 </a>
@@ -238,78 +405,12 @@
 
       
         
-          <span itemprop="articleBody">
-            
-              <p><code>touch [filename]</code> - create a new file<br><code>pwd</code> - print working directory<br><code>cd</code> - change directory</p>
-<hr>
-<h6 id="ls">ls</h6><p><code>-a</code> - lists all contents, including hidden files and directories</p>
-<p><code>-l</code> - lists all contents of a directory in long format<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ ls -l</span><br><span class="line">drwxr-xr-x <span class="number">5</span>  cc  eng  <span class="number">4096</span> Jun <span class="number">24</span> <span class="number">16</span>:<span class="number">51</span>  action</span><br><span class="line">drwxr-xr-x <span class="number">4</span>  cc  eng  <span class="number">4096</span> Jun <span class="number">24</span> <span class="number">16</span>:<span class="number">51</span>  comedy</span><br><span class="line">drwxr-xr-x <span class="number">6</span>  cc  eng  <span class="number">4096</span> Jun <span class="number">24</span> <span class="number">16</span>:<span class="number">51</span>  drama</span><br><span class="line">-rw-r--r-- <span class="number">1</span>  cc  eng     <span class="number">0</span> Jun <span class="number">24</span> <span class="number">16</span>:<span class="number">51</span>  genres.txt</span><br></pre></td></tr></table></figure></p>
-<p>1.==Access rights==. These are actions that are permitted on a file or directory.<br>2.==Number of hard links==. This number counts the number of child directories and files. This number includes the parent directory link (..) and current directory link (.).<br>3.==The username of the file’s owner==. Here the username is cc.<br>4.==The name of the group that owns the file==. Here the group name is eng.<br>5.The ==size== of the file in bytes.<br>6.The ==date &amp; time== that the file was ==last modified==.<br>7.The ==name== of the file or directory.</p>
-<p><code>-t</code> - order files and directories by the time they were last modified.<br><code>-alt</code> - multiple options are used together</p>
-<hr>
-<h3 id="cp">cp</h3><ol>
-<li><code>-[filename1] [filename2]</code> - copy the contents of filename1 into filename2.</li>
-<li><code>-[filename1] [filename2] [path]</code> - a new copy of filename1 and filename1 in [path] directory.</li>
-<li><code>-*</code> - copy all files</li>
-<li><code>-m*.txt</code> - copy all files starting with “m” and ending with “txt”</li>
-</ol>
-<hr>
-<h3 id="mv">mv</h3><ol>
-<li><code>-[filename1] [filename2]</code> - rename a file</li>
-</ol>
-<hr>
-<h3 id="rm">rm</h3><ol>
-<li>The rm command deletes files and directories.</li>
-<li>The <code>-r</code> is an option that modifies the behavior of the rm command. The -r stands for “recursive,” and it’s used to delete a directory and all of its child directories.</li>
-<li>Be careful when you use <code>rm</code>! It deletes files and directories permanently.</li>
-</ol>
-<hr>
-<h3 id="cat_&gt;_&gt;&gt;_&lt;">cat &gt; &gt;&gt; &lt;</h3><ol>
-<li><code>echo &quot;Hello&quot; &gt; hello.txt</code> - The <code>&gt;</code> command redirects the standard output to a file.</li>
-<li><code>cat hello.txt</code> - The <code>cat</code> command outputs the contents of a file to the terminal.</li>
-<li><code>cat oceans.txt &gt; continents.txt</code> - <code>&gt;</code> takes the standard output of the command on the left, and redirects it to the file on the right. Note that - - <code>&gt;</code> overwrites all original content in <strong>continents.txt</strong>.</li>
-<li><code>cat glaciers.txt &gt;&gt; rivers.txt</code> - <code>&gt;&gt;</code> takes the standard output of the command on the left and appends (adds) it to the file on the right.</li>
-<li><code>cat &lt; lakes.txt</code> - <code>&lt;</code> takes the standard input from the file on the right and inputs it into the program on the left.</li>
-<li><code>cat volcanoes.txt | wc</code> - <code>|</code> is a “pipe”. The <code>|</code> takes the standard output of the command on the left, and pipes it as standard input to the command on the right.</li>
-<li><code>wc</code> - <code>wc</code> command outputs the number of lines, words, and characters in volcanoes.txt, respectively.</li>
-<li><code>sort lakes.txt</code> - <code>sort</code> takes the standard input and orders it alphabetically for the standard output.</li>
-<li><code>uniq</code> - filter out adjacent, duplicate lines in a file.</li>
-</ol>
-<hr>
-<h3 id="grep">grep</h3><ul>
-<li><code>grep Mount mountains.txt</code> - <code>grep</code> stands for “global regular expression print”. It searches files for lines that match a pattern and returns the results.</li>
-</ul>
-<ol>
-<li><code>grep -i</code> - be case insensitive.</li>
-<li><code>grep -R</code> - searches all files in a directory and outputs filenames and lines containing matched results. -R stands for “recursive”</li>
-<li><code>grep -Rl</code> - searches all files in a directory and outputs only filenames with matched results. -R stands for “recursive” and l stands for “files with matches”.</li>
-</ol>
-<hr>
-<h3 id="sed">sed</h3><ul>
-<li><code>sed &#39;s/snow/rain/[g]&#39; forests.txt</code> - <code>sed</code> stands for “”. It accepts standard input and modifies it based on an expression, before displaying it as output data. It is similar to “find and replace”.</li>
-</ul>
-<ol>
-<li><code>s</code> -  stands for “substitution”. it is always used when using sed for substitution.</li>
-<li><code>snow</code> -  the search string, the text to find.</li>
-<li><code>rain</code> -  the replacement string, the text to add in place.<br>the above command will only replace <strong>the first instance</strong> of “snow” on a line.</li>
-<li><code>g</code> - means “global”</li>
-</ol>
-<hr>
-<h1 id="Enviroment">Enviroment</h1><hr>
-<p><strong>~/.bash_profile</strong> is the name of file used to store environment settings. It is commonly called the “bash profile”. When a session starts, it will load the contents of the bash profile before executing commands.</p>
-<ul>
-<li>The <code>~</code> represents the user’s home directory.</li>
-<li>The <code>.</code> indicates a hidden file.</li>
-<li>The name <strong>~/.bash_profile</strong> is important, since this is how the command line recognizes the bash profile.</li>
-</ul>
-<ol>
-<li>The command <code>nano ~/.bash_profile</code> opens up <strong>~/.bash_profile</strong> in nano.</li>
-<li>The text <code>echo &quot;Welcome, Jane Doe&quot;</code> creates a greeting in the bash profile, which is saved. It tells the command line to <code>echo</code> the string “Welcome, Jane Doe” when a terminal session begins.</li>
-<li>The command <code>source ~/.bash_profile</code> activates the changes in <strong>~/.bash_profile</strong> for the current session. Instead of closing the terminal and needing to start a new session, <code>source</code> makes the changes available right away in the session we are in.</li>
-</ol>
-
-            
-          </span>
+          <p><code>touch [filename]</code> - create a new file<br><code>pwd</code> - print working directory<br><code>cd</code> - change directory</p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2015/11/25/Command-line-notes/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -630,7 +731,7 @@
 
       
         
-          <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">style="font-size: 10px; font-family: Impact; color: red; background-color: brown; text-align:center"</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="title">strong</span>&gt;</span><span class="tag">&lt;/<span class="title">strong</span>&gt;</span> <span class="tag">&lt;<span class="title">em</span>&gt;</span><span class="tag">&lt;/<span class="title">em</span>&gt;</span> <span class="comment">&lt;!--comments--&gt;</span> </span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="title">head</span>&gt;</span><span class="tag">&lt;<span class="title">link</span> <span class="attribute">type</span>=<span class="value">"text/css"</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span> <span class="attribute">href</span>=<span class="value">"stylesheet.css"</span>/&gt;</span><span class="tag">&lt;/<span class="title">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line">or <span class="tag">&lt;<span class="title">head</span>&gt;</span><span class="tag">&lt;<span class="title">style</span>&gt;</span><span class="css"></span><span class="tag">&lt;/<span class="title">style</span>&gt;</span><span class="tag">&lt;/<span class="title">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">""</span> /&gt;</span> <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span><span class="tag">&lt;/<span class="title">a</span>&gt;</span> <span class="tag">&lt;<span class="title">ul</span>&gt;</span><span class="tag">&lt;/<span class="title">ul</span>&gt;</span> <span class="tag">&lt;<span class="title">ol</span>&gt;</span><span class="tag">&lt;/<span class="title">ol</span>&gt;</span> <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span> </span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="title">table</span>&gt;</span><span class="tag">&lt;<span class="title">thead</span>&gt;</span><span class="tag">&lt;<span class="title">tr</span>&gt;</span><span class="tag">&lt;<span class="title">th</span> <span class="attribute">colspan</span>=<span class="value">"2"</span>&gt;</span><span class="tag">&lt;/<span class="title">th</span>&gt;</span><span class="tag">&lt;/<span class="title">tr</span>&gt;</span><span class="tag">&lt;/<span class="title">thead</span>&gt;</span><span class="tag">&lt;<span class="title">tbody</span>&gt;</span><span class="tag">&lt;<span class="title">tr</span>&gt;</span><span class="tag">&lt;/<span class="title">tr</span>&gt;</span><span class="tag">&lt;<span class="title">td</span>&gt;</span><span class="tag">&lt;/<span class="title">td</span>&gt;</span><span class="tag">&lt;/<span class="title">tbody</span>&gt;</span><span class="tag">&lt;/<span class="title">table</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">style</span>=<span class="value">"width:50px; height:50px; background-color: red"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span></span><br><span class="line"></span><br><span class="line">td &#123;border: 1px dashed blue;&#125;</span><br><span class="line"></span><br><span class="line">去除超链接下划线`text-decoration: none;</span><br><span class="line"></span><br><span class="line">div &gt; p  div p 有区别</span><br><span class="line"></span><br><span class="line">id #    class .</span><br><span class="line">a: /link /hover /visited   伪选择器 事先text-decoration</span><br><span class="line"></span><br><span class="line">p:first-child   //It's used to apply styling to only the elements that are the first children of their parents.</span><br><span class="line"></span><br><span class="line">p:nth-cilld(x)  //select any child of an element after the first child with the pseudo-class selector nth-child</span><br><span class="line"></span><br><span class="line">class id exist at the same time</span><br></pre></td></tr></table></figure>
+          <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">style="font-size: 10px; font-family: Impact; color:red; background-color:brown; text-align:center"</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="title">strong</span>&gt;</span>加粗<span class="tag">&lt;/<span class="title">strong</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">em</span>&gt;</span>斜体<span class="tag">&lt;/<span class="title">em</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">q</span>&gt;</span>引用简短文本("xxxx")<span class="tag">&lt;/<span class="title">q</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">blockquote</span>&gt;</span>引用长文本(段落缩进样式)<span class="tag">&lt;/<span class="title">blockquote</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--comments--&gt;</span></span><br><span class="line">&amp;nbsp;(空格)</span><br><span class="line"><span class="tag">&lt;<span class="title">hr</span> /&gt;</span>(添加水平横线)</span><br><span class="line"><span class="tag">&lt;<span class="title">br</span> /&gt;</span>(换行)</span><br><span class="line"><span class="tag">&lt;<span class="title">address</span>&gt;</span>联系地址信息<span class="tag">&lt;/<span class="title">address</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">code</span>&gt;</span>代码语言<span class="tag">&lt;/<span class="title">code</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">pre</span>&gt;</span>多行代码<span class="tag">&lt;/<span class="title">pre</span>&gt;</span>(保留空格和换行符)</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="title">table</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">thead</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">tr</span>&gt;</span><span class="tag">&lt;<span class="title">th</span> <span class="attribute">colspan</span>=<span class="value">"2"</span>&gt;</span><span class="tag">&lt;/<span class="title">th</span>&gt;</span><span class="tag">&lt;/<span class="title">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">thead</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">tbody</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">tr</span>&gt;</span><span class="tag">&lt;<span class="title">td</span>&gt;</span><span class="tag">&lt;/<span class="title">td</span>&gt;</span><span class="tag">&lt;/<span class="title">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">tbody</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">table</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="title">head</span>&gt;</span><span class="tag">&lt;<span class="title">link</span> <span class="attribute">type</span>=<span class="value">"text/css"</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span> <span class="attribute">href</span>=<span class="value">"stylesheet.css"</span>/&gt;</span><span class="tag">&lt;/<span class="title">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line">or <span class="tag">&lt;<span class="title">head</span>&gt;</span><span class="tag">&lt;<span class="title">style</span>&gt;</span><span class="css"></span><span class="tag">&lt;/<span class="title">style</span>&gt;</span><span class="tag">&lt;/<span class="title">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">""</span> /&gt;</span> <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span><span class="tag">&lt;/<span class="title">a</span>&gt;</span> <span class="tag">&lt;<span class="title">ul</span>&gt;</span><span class="tag">&lt;/<span class="title">ul</span>&gt;</span> <span class="tag">&lt;<span class="title">ol</span>&gt;</span><span class="tag">&lt;/<span class="title">ol</span>&gt;</span> <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">style</span>=<span class="value">"width:50px; height:50px; background-color: red"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span></span><br><span class="line"></span><br><span class="line">td &#123;border: 1px dashed blue;&#125;</span><br><span class="line"></span><br><span class="line">去除超链接下划线`text-decoration: none;</span><br><span class="line"></span><br><span class="line">div &gt; p  div p 有区别</span><br><span class="line"></span><br><span class="line">id #    class .</span><br><span class="line">a: /link /hover /visited   伪选择器 事先text-decoration</span><br><span class="line"></span><br><span class="line">p:first-child   //It's used to apply styling to only the elements that are the first children of their parents.</span><br><span class="line"></span><br><span class="line">p:nth-cilld(x)  //select any child of an element after the first child with the pseudo-class selector nth-child</span><br><span class="line"></span><br><span class="line">class id exist at the same time</span><br></pre></td></tr></table></figure>
           <div class="post-more-link text-center">
             <a class="btn" href="/2015/11/15/Html-notes/#more" rel="contents">
               阅读全文 &raquo;
@@ -897,171 +998,6 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2015/10/28/Open-Broadcaster-Software-with-Linux/" itemprop="url">
-                  Linux下OBS安装
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            发表于
-            <time itemprop="dateCreated" datetime="2015-10-28T12:33:14+08:00" content="2015-10-28">
-              2015-10-28
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <h5 id="我要当主播">我要当主播</h5><hr>
-<p>本来想在熊猫tv上开直播的，后来因为熊猫tv邮箱验证存在错误，所以选择斗鱼tv。毕竟作为曾经红火一时的直播平台，各方面都经受过考验。</p>
-<hr>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/10/28/Open-Broadcaster-Software-with-Linux/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2015/10/17/Background-music-recommendation/" itemprop="url">
-                  背景音乐推荐
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            发表于
-            <time itemprop="dateCreated" datetime="2015-10-17T09:53:40+08:00" content="2015-10-17">
-              2015-10-17
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <p>以下音乐是不错的纯音乐，可以用做演讲朗诵的背景音乐、T台走秀音乐或者表演演出的背景音乐。它们有乐队的、个人的，还有一些是instrumental或者电影动画的配乐。（instrumental是指某个歌曲的伴奏）<br>由于中国风、和风，有时候并没有太明显的界限[只能说乐器不同或创作者国籍有别]，考虑到乐器的分类、作者的背景、曲子的风格等，挺混乱的= =，所以我就把他们全都归类到[东方风]。与‘东方音乐’不等同。</p>
-<hr>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/10/17/Background-music-recommendation/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
 
   </section>
 
@@ -1108,7 +1044,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">12</span>
+              <span class="site-state-item-count">14</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -1122,7 +1058,7 @@
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">18</span>
+              <span class="site-state-item-count">20</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
