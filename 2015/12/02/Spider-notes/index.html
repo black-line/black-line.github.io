@@ -51,16 +51,19 @@
 
 
 
-<meta name="description" content="import urllib.requestimport urllib.request -aurllib.request module uses HTTP/1.1 and includes Connection:close header in its HTTP requests.12urllib.request.urlopen(url, data=None, [timeout, ]*, cafile">
+<meta name="description" content="import urllib.requestimport urllib.request -a urllib.request module uses HTTP/1.1 and includes Connection:close header in its HTTP requests.
+urllib.request.urlopen(url, data=None, [timeout, ]*, cafile">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Spider-notes">
+<meta property="og:title" content="Spider学习笔记">
 <meta property="og:url" content="imwzq.com/2015/12/02/Spider-notes/index.html">
 <meta property="og:site_name" content="BlackLine">
-<meta property="og:description" content="import urllib.requestimport urllib.request -aurllib.request module uses HTTP/1.1 and includes Connection:close header in its HTTP requests.12urllib.request.urlopen(url, data=None, [timeout, ]*, cafile">
-<meta property="og:updated_time" content="2015-12-05T00:35:12.000Z">
+<meta property="og:description" content="import urllib.requestimport urllib.request -a urllib.request module uses HTTP/1.1 and includes Connection:close header in its HTTP requests.
+urllib.request.urlopen(url, data=None, [timeout, ]*, cafile">
+<meta property="og:updated_time" content="2015-12-06T11:55:25.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Spider-notes">
-<meta name="twitter:description" content="import urllib.requestimport urllib.request -aurllib.request module uses HTTP/1.1 and includes Connection:close header in its HTTP requests.12urllib.request.urlopen(url, data=None, [timeout, ]*, cafile">
+<meta name="twitter:title" content="Spider学习笔记">
+<meta name="twitter:description" content="import urllib.requestimport urllib.request -a urllib.request module uses HTTP/1.1 and includes Connection:close header in its HTTP requests.
+urllib.request.urlopen(url, data=None, [timeout, ]*, cafile">
 
 
 
@@ -72,7 +75,7 @@
   };
 </script>
 
-  <title> Spider-notes | BlackLine </title>
+  <title> Spider学习笔记 | BlackLine </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -194,7 +197,7 @@
             
             
               
-                Spider-notes
+                Spider学习笔记
               
             
           </h1>
@@ -227,20 +230,20 @@
       
 
       
-        <span itemprop="articleBody"><h3 id="import_urllib-request">import urllib.request</h3><p><a href="https://docs.python.org/3/library/urllib.request.html#module-urllib.request" target="_blank" rel="external">import urllib.request</a> -aurllib.request module uses HTTP/1.1 and includes Connection:close header in its HTTP requests.<br><figure class="highlight fortran"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">urllib.request.urlopen(url, <span class="type">data</span>=<span class="type">None</span>, [timeout, ]*, cafile=<span class="type">None</span>, capath=<span class="type">None</span>, cadefault=False, context=<span class="type">None</span>)</span><br><span class="line"><span class="keyword">return</span>  http.client.HTTPResponse object</span><br></pre></td></tr></table></figure></p>
-<p>This function always returns an object which can work as context manager and has methods such as</p>
+        <span itemprop="articleBody"><h3 id="import_urllib-request">import urllib.request</h3><p><a href="https://docs.python.org/3/library/urllib.request.html#module-urllib.request" target="_blank" rel="external">import urllib.request</a> -a urllib.request module uses HTTP/1.1 and includes Connection:close header in its HTTP requests.</p>
+<p><code>urllib.request.urlopen(url, data=None, [timeout, ]*, cafile=None, capath=None, cadefault=False, context=None)</code><br>返回http.client.HTTPResponse 对象<br>也可以作为<code>context manager</code>有以下方法</p>
 <ol>
-<li>geturl() — return the URL of the resource retrieved, commonly used to determine if a redirect was followed(检查是否<strong>重定向</strong>)</li>
-<li>info() — return the <strong>meta-information</strong> of the page, such as headers, in the form of an email.message_from_string() instance (see Quick Reference to HTTP Headers)</li>
-<li>getcode() – return the HTTP <strong>status code</strong> of the response.<a id="more"></a>
-<h3 id="HTTPResponse_Objects">HTTPResponse Objects</h3><a href="https://docs.python.org/3/library/http.client.html#httpresponse-objects" target="_blank" rel="external">xx</a><br><code>.read()</code><br><code>.readinto(b)</code><br><code>getheader()</code><br><code>getheaders()</code><br>………….</li>
+<li>geturl() — 返回资源检索网址，经常用来检查是否有<strong>重定向</strong></li>
+<li>info() — 返回<strong>meta-information</strong>例如 headers</li>
+<li>getcode() –  返回HTTP <strong>status code</strong><a id="more"></a>
+<h4 id="HTTPResponse_对象">HTTPResponse 对象</h4><a href="https://docs.python.org/3/library/http.client.html#httpresponse-objects" target="_blank" rel="external">httpresponse-objects</a><br><code>.read()</code><br><code>.readinto(b)</code><br><code>getheader(&#39;User-Agent&#39;)</code> -返回‘User-Agent’中内容<br><code>getheaders()</code><br>………….</li>
 </ol>
-<p><code>url</code> -string or Request Object<br><code>data</code> -<br><code>timeout</code> -a timeout in <strong>seconds</strong> for blocking operations like the connection attempt</p>
-<figure class="highlight oxygene"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> http.client.HTTPResponse(sock, debuglevel=<span class="number">0</span>, <span class="function"><span class="keyword">method</span>=<span class="title">None</span>, <span class="title">url</span>=<span class="title">None</span>)</span></span><br></pre></td></tr></table></figure>
-<h3 id="class_urllib-request-Request">class urllib.request.Request</h3><p><a href="https://docs.python.org/3/library/urllib.request.html?highlight=urllib.request.request#urllib.request.Request" target="_blank" rel="external">xx</a></p>
-<p><code>urllib.parse.urlencode(query, doseq=False, safe=&#39;&#39;, encoding=None, errors=None, quote_via=quote_plus)</code> -Convert a mapping object or a sequence of two-element tuples, which may contain str or bytes objects, to a percent-encoded ASCII text string. If the resultant string is to be used as a data for POST operation with the urlopen() function, then it should be <strong>encoded to bytes</strong>, otherwise it would result in a TypeError.</p>
-<h3 id="deque">deque</h3><p><code>from collections import deque</code> -<a href="https://docs.python.org/3/library/collections.html?highlight=deque#collections.deque" target="_blank" rel="external">deque</a><br><code>append(x) appendleft(x) clear()</code><br><code>copy()</code> -Create a shallow copy of the deque.<br><code>count(x)</code> -Count the number of deque elements equal to x.<br><code>extend(iterable) extendleft(iterable) index(x[,start[,stop]]) insert(i,x)</code><br><code>pop() popleft()</code> -or raises an IndexError<br><code>remove(value)</code> -Remove the first occurrence of value. If not found, raises a ValueError.<br><code>reserve() rotate(n)</code></p>
-<h3 id="set">set</h3><p><code>set</code> -<a href="https://docs.python.org/3/library/stdtypes.html?highlight=set#set" target="_blank" rel="external">xx</a></p>
+<p><code>url</code> -可以是string或Request对象<br><code>data</code> -<br><code>timeout</code> -以秒为单位用于停止连接尝试</p>
+<p><code>class http.client.HTTPResponse(sock, debuglevel=0, method=None, url=None)</code></p>
+<h3 id="class_urllib-request-Request">class urllib.request.Request</h3><p><a href="https://docs.python.org/3/library/urllib.request.html?highlight=urllib.request.request#urllib.request.Request" target="_blank" rel="external">urllib.request.Request</a></p>
+<h3 id="urllib-parse-urlencode">urllib.parse.urlencode</h3><p><code>urllib.parse.urlencode(query, doseq=False, safe=&#39;&#39;, encoding=None, errors=None, quote_via=quote_plus)</code><br>-将一个可能含有字符串或字节对象的mapping或包含多个由两个元素组成的元组的序列，转换成<strong>ASCII文本字符串</strong><br>如果得到的字符串被作为data以urlopen()函数用于POST操作，该字符串因为被编码成<strong>bytes</strong>，否则会引起TypeError错误</p>
+<h3 id="deque">deque</h3><p><code>from collections import deque</code> -<a href="https://docs.python.org/3/library/collections.html?highlight=deque#collections.deque" target="_blank" rel="external">deque</a><br><code>append(x) appendleft(x) clear()</code><br><code>copy()</code> -Create a shallow copy of the deque.<br><code>count(x)</code> -统计队列中x的个数<br><code>extend(iterable) extendleft(iterable) index(x[,start[,stop]]) insert(i,x)</code><br><code>pop() popleft()</code> -会引起IndexError错误<br><code>remove(value)</code> -删除第一个value值，会引起ValueError错误.<br><code>reserve() rotate(n)</code></p>
+<h3 id="set">set</h3><p><code>set</code> -<a href="https://docs.python.org/3/library/stdtypes.html?highlight=set#set" target="_blank" rel="external">set</a></p>
 </span>
       
     </div>
@@ -329,7 +332,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">14</span>
+              <span class="site-state-item-count">15</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -343,7 +346,7 @@
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">20</span>
+              <span class="site-state-item-count">21</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
