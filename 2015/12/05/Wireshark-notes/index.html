@@ -57,7 +57,7 @@
 <meta property="og:url" content="imwzq.com/2015/12/05/Wireshark-notes/index.html">
 <meta property="og:site_name" content="BlackLine">
 <meta property="og:description" content="安装坎坷的安装过程 我的天。。从这里下载源码。解压tar -xvf wireshark-2.0.0.tar.bz2检查wireshark的依赖关系cd wireshark-2.0.0./config发现一堆问题。。。。。。。。。。。。。。。">
-<meta property="og:updated_time" content="2015-12-05T00:34:23.000Z">
+<meta property="og:updated_time" content="2015-12-09T13:28:17.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Wireshark-notes">
 <meta name="twitter:description" content="安装坎坷的安装过程 我的天。。从这里下载源码。解压tar -xvf wireshark-2.0.0.tar.bz2检查wireshark的依赖关系cd wireshark-2.0.0./config发现一堆问题。。。。。。。。。。。。。。。">
@@ -262,6 +262,11 @@
 <p><code>sudo groupadd wireshark</code><br>Add your username to the wireshark group<br><code>sudo usermod -a -G wireshark YOUR_USER_NAME</code><br>Change the group  ownership of file dumpcap to wireshark<br><code>sudo chgrp wireshark /usr/bin/dumpcap</code><br>Change the mode of the file dumpcap to allow execution by the group wireshark<br><code>sudo chmod 750 /usr/bin/dumpcap</code><br>Grant capabilities with setcap<br><code>sudo setcap cap_net_raw,cap_net_admin=eip /usr/bin/dumpcap</code><br>Verify the change<br><code>sudo getcap /usr/bin/dumpcap</code><br>At this point, you will need to log out, then back into Unity (Thanks for Jorge for pointing this out).<br>方法三：如果想装最新的wireshark版本，可以用下面的ppa:<br>The latest Wireshark version available is Wireshark 1.11.0, which can be installed from a PPA. To install Wireshark on Ubuntu, Linux Mint and Debian, do this:</p>
 <p><code>$ sudo add-apt-repository ppa:dreibh/ppa</code><br><code>$ sudo apt-get update</code><br><code>$ sudo apt-get install wireshar</code><br>To start wiresharking, just type nohup wireshark &amp;&gt; /dev/null &amp; in your terminal.</p>
 <hr>
+<p>Ctrl-F -打开Find Packet<br>1.Display filter -输入表达式筛选 not ip,ip.addr==x.x.x.x,arp<br>2.Hex value -00:ff,ff:ff,00:AB:B1:f0<br>3.String -UserB,domin<br>将某一个数据包设定为时间参考 -选中数据包 Set Time Reference</p>
+<h3 id="过滤器">过滤器</h3><h4 id="捕获过滤器(BPF(Berkeley_Packet_Filter)语法)">捕获过滤器(BPF(Berkeley Packet Filter)语法)</h4><p><strong>Ubuntu 14.10用不了？？？？</strong><br>限定词|说明|例子<br>—|—|—<br>Type|指出名字或数字所代表的意义|host,net,port<br>Dir|指明传输方向是前往还是来自名字或数字|src,dst<br>Proto|限定所要匹配的协议|ether,ip,tcp,udp,http,ftp<br>Ex: <code>dst host 192.168.0.10 &amp;&amp; tcp port 80</code><br>三种逻辑运算符: <code>&amp;&amp;   ||    !</code></p>
+<h4 id="显示过滤器">显示过滤器</h4><p>and or not xor(有且只有一个条件被满足)</p>
+<hr>
+<p>Statistics-&gt;Endpoints -查看端口(端点地址，传输发送数据包的数量和字节数)<br>Statistics-&gt;Conversations -查看网络会话()</p>
 </span>
       
     </div>
