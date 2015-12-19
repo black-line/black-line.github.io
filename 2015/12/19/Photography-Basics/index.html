@@ -35,7 +35,7 @@
 <link href="/css/main.css?v=0.4.5.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="notes,spider," />
+  <meta name="keywords" content="Hexo,next" />
 
 
 
@@ -51,19 +51,16 @@
 
 
 
-<meta name="description" content="import urllib.requestimport urllib.request -a urllib.request module uses HTTP/1.1 and includes Connection:close header in its HTTP requests.
-urllib.request.urlopen(url, data=None, [timeout, ]*, cafile">
+<meta name="description" content="1、档的选择：自动挡（颜色最醒目），或a档：相机自己完成各种设定。2、光圈优先档：数字与光圈成反比，与景深成正比。光圈越小，成像范围越小，前后模糊化。11值可拍出夜景的灯光。11：整个画面都会清晰。4：适于拍特写和人像。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Spider学习笔记">
-<meta property="og:url" content="imwzq.com/2015/12/02/Spider-notes/index.html">
+<meta property="og:title" content="摄影基础">
+<meta property="og:url" content="imwzq.com/2015/12/19/Photography-Basics/index.html">
 <meta property="og:site_name" content="BlackLine">
-<meta property="og:description" content="import urllib.requestimport urllib.request -a urllib.request module uses HTTP/1.1 and includes Connection:close header in its HTTP requests.
-urllib.request.urlopen(url, data=None, [timeout, ]*, cafile">
-<meta property="og:updated_time" content="2015-12-06T11:55:25.000Z">
+<meta property="og:description" content="1、档的选择：自动挡（颜色最醒目），或a档：相机自己完成各种设定。2、光圈优先档：数字与光圈成反比，与景深成正比。光圈越小，成像范围越小，前后模糊化。11值可拍出夜景的灯光。11：整个画面都会清晰。4：适于拍特写和人像。">
+<meta property="og:updated_time" content="2015-12-19T07:33:56.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Spider学习笔记">
-<meta name="twitter:description" content="import urllib.requestimport urllib.request -a urllib.request module uses HTTP/1.1 and includes Connection:close header in its HTTP requests.
-urllib.request.urlopen(url, data=None, [timeout, ]*, cafile">
+<meta name="twitter:title" content="摄影基础">
+<meta name="twitter:description" content="1、档的选择：自动挡（颜色最醒目），或a档：相机自己完成各种设定。2、光圈优先档：数字与光圈成反比，与景深成正比。光圈越小，成像范围越小，前后模糊化。11值可拍出夜景的灯光。11：整个画面都会清晰。4：适于拍特写和人像。">
 
 
 
@@ -75,7 +72,7 @@ urllib.request.urlopen(url, data=None, [timeout, ]*, cafile">
   };
 </script>
 
-  <title> Spider学习笔记 | BlackLine </title>
+  <title> 摄影基础 | BlackLine </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -197,7 +194,7 @@ urllib.request.urlopen(url, data=None, [timeout, ]*, cafile">
             
             
               
-                Spider学习笔记
+                摄影基础
               
             
           </h1>
@@ -206,8 +203,8 @@ urllib.request.urlopen(url, data=None, [timeout, ]*, cafile">
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2015-12-02T20:43:42+08:00" content="2015-12-02">
-              2015-12-02
+            <time itemprop="dateCreated" datetime="2015-12-19T15:30:48+08:00" content="2015-12-19">
+              2015-12-19
             </time>
           </span>
 
@@ -230,50 +227,25 @@ urllib.request.urlopen(url, data=None, [timeout, ]*, cafile">
       
 
       
-        <span itemprop="articleBody"><h3 id="import_urllib-request">import urllib.request</h3><p><a href="https://docs.python.org/3/library/urllib.request.html#module-urllib.request" target="_blank" rel="external">import urllib.request</a> -a urllib.request module uses HTTP/1.1 and includes Connection:close header in its HTTP requests.</p>
-<p><code>urllib.request.urlopen(url, data=None, [timeout, ]*, cafile=None, capath=None, cadefault=False, context=None)</code><br>返回http.client.HTTPResponse 对象<br>也可以作为<code>context manager</code>有以下方法</p>
-<ol>
-<li>geturl() — 返回资源检索网址，经常用来检查是否有<strong>重定向</strong></li>
-<li>info() — 返回<strong>meta-information</strong>例如 headers</li>
-<li>getcode() –  返回HTTP <strong>status code</strong><a id="more"></a>
-<h4 id="HTTPResponse_对象">HTTPResponse 对象</h4><a href="https://docs.python.org/3/library/http.client.html#httpresponse-objects" target="_blank" rel="external">httpresponse-objects</a><br><code>.read()</code><br><code>.readinto(b)</code><br><code>getheader(&#39;User-Agent&#39;)</code> -返回‘User-Agent’中内容<br><code>getheaders()</code><br>………….</li>
-</ol>
-<p><code>url</code> -可以是string或Request对象<br><code>data</code> -<br><code>timeout</code> -以秒为单位用于停止连接尝试</p>
-<p><code>class http.client.HTTPResponse(sock, debuglevel=0, method=None, url=None)</code></p>
-<h3 id="class_urllib-request-Request">class urllib.request.Request</h3><p><a href="https://docs.python.org/3/library/urllib.request.html?highlight=urllib.request.request#urllib.request.Request" target="_blank" rel="external">urllib.request.Request</a></p>
-<h3 id="urllib-parse-urlencode">urllib.parse.urlencode</h3><p><code>urllib.parse.urlencode(query, doseq=False, safe=&#39;&#39;, encoding=None, errors=None, quote_via=quote_plus)</code><br>-将一个可能含有字符串或字节对象的mapping或包含多个由两个元素组成的元组的序列，转换成<strong>ASCII文本字符串</strong><br>如果得到的字符串被作为data以urlopen()函数用于POST操作，该字符串因为被编码成<strong>bytes</strong>，否则会引起TypeError错误</p>
-<h3 id="deque">deque</h3><p><code>from collections import deque</code> -<a href="https://docs.python.org/3/library/collections.html?highlight=deque#collections.deque" target="_blank" rel="external">deque</a><br><code>append(x) appendleft(x) clear()</code><br><code>copy()</code> -Create a shallow copy of the deque.<br><code>count(x)</code> -统计队列中x的个数<br><code>extend(iterable) extendleft(iterable) index(x[,start[,stop]]) insert(i,x)</code><br><code>pop() popleft()</code> -会引起IndexError错误<br><code>remove(value)</code> -删除第一个value值，会引起ValueError错误.<br><code>reserve() rotate(n)</code></p>
-<h3 id="set">set</h3><p><code>set</code> -<a href="https://docs.python.org/3/library/stdtypes.html?highlight=set#set" target="_blank" rel="external">set</a></p>
+        <span itemprop="articleBody"><p>1、档的选择：自动挡（颜色最醒目），或a档：相机自己完成各种设定。<br>2、光圈优先档：数字与光圈成反比，与景深成正比。光圈越小，成像范围越小，前后模糊化。11值可拍出夜景的灯光。11：整个画面都会清晰。4：适于拍特写和人像。<br><a id="more"></a><br>3、快门优先档：佳能是TV模式，尼康相机是s模式。自己决定快门的速度。越小成像速度越快，越大成像速度越慢。1/125是相对慢，1/500是相对快。<br>4、问题：按不下快门：是因为你设置了自动对焦，而相机却无法正常对焦，解决办法：设置为手动对焦，或离物体远一些。<br>5、感光度优先档：光线好或是白天：可用iso50或100即可，若光线不好，提高到400或更高即可，R是自动。若感光度过于高的话，会使图片噪点很大，颗粒感很强影响画面质量。调节感光度会提高快门速度。<br>6、白平衡：为了使照片还原成真实的白色，相机会自动添加颜色使图像生成为它所理解的白色。这就是我们为什么要调节白平衡。AWB：是自动白平衡。<br>7、曝光补偿设置：“白加黑减”：在光圈优先模式里，想拍出好的白色，增加把曝光度为+2，好的黑色，设为-3.<br>8、程序自动模式，P档。相机自调加自己调。光线较暗时，p档不会自弹闪光灯，而自动挡会。<br>9、手动拍摄模式，M档。需要自己控制各种参数。<br>标尺可以看曝光是否合适，合适时指向0。</p>
 </span>
       
     </div>
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/notes/" rel="tag">#notes</a>
-          
-            <a href="/tags/spider/" rel="tag">#spider</a>
-          
-        </div>
-      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/11/25/Command-line-notes/" rel="next" title="Command Lline 学习笔记">
-                <i class="fa fa-chevron-left"></i> Command Lline 学习笔记
+              <a href="/2015/12/05/Wireshark-notes/" rel="next" title="Wireshark-notes">
+                <i class="fa fa-chevron-left"></i> Wireshark-notes
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2015/12/05/Wireshark-notes/" rel="prev" title="Wireshark-notes">
-                Wireshark-notes <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
