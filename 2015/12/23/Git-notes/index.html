@@ -1,0 +1,634 @@
+<!doctype html>
+<html class="theme-next   use-motion ">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=0.4.5.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo,next" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.1" />
+
+
+
+
+
+
+<meta name="description" content="安装【Windows】msysgit是Windows版的Git，从http://msysgit.github.io/下载，然后按默认选项安装即可安装完后输入12$ git config --global user.name &quot;Your Name&quot;$ git config --global user.email &quot;email@example.com&quot;
+注意git config命令的--global参">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Git学习笔记">
+<meta property="og:url" content="imwzq.com/2015/12/23/Git-notes/index.html">
+<meta property="og:site_name" content="BlackLine">
+<meta property="og:description" content="安装【Windows】msysgit是Windows版的Git，从http://msysgit.github.io/下载，然后按默认选项安装即可安装完后输入12$ git config --global user.name &quot;Your Name&quot;$ git config --global user.email &quot;email@example.com&quot;
+注意git config命令的--global参">
+<meta property="og:image" content="imwzq.com/images/GitReset01.jpg">
+<meta property="og:image" content="imwzq.com/images/GitReset02.jpg">
+<meta property="og:image" content="imwzq.com/images/GitRepository01.jpg">
+<meta property="og:image" content="imwzq.com/images/GitRepository02.jpg">
+<meta property="og:image" content="imwzq.com/images/GitRepository03.jpg">
+<meta property="og:updated_time" content="2015-12-23T08:28:38.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Git学习笔记">
+<meta name="twitter:description" content="安装【Windows】msysgit是Windows版的Git，从http://msysgit.github.io/下载，然后按默认选项安装即可安装完后输入12$ git config --global user.name &quot;Your Name&quot;$ git config --global user.email &quot;email@example.com&quot;
+注意git config命令的--global参">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: 'post',
+    motion: true
+  };
+</script>
+
+  <title> Git学习笔记 | BlackLine </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  <!--[if lte IE 8]>
+  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
+           style='margin-left:auto;margin-right:auto;display: block;'/>
+    </a>
+  </div>
+<![endif]-->
+  
+
+
+
+
+
+
+  <div class="container one-column page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">BlackLine</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu ">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div id="content" class="content">
+          
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Git学习笔记
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2015-12-23T11:49:57+08:00" content="2015-12-23">
+              2015-12-23
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        <span itemprop="articleBody"><h5 id="安装">安装</h5><p>【Windows】msysgit是Windows版的Git，从<a href="http://msysgit.github.io/下载，然后按默认选项安装即可" target="_blank" rel="external">http://msysgit.github.io/下载，然后按默认选项安装即可</a><br>安装完后输入<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user<span class="class">.name</span> <span class="string">"Your Name"</span></span><br><span class="line">$ git config --global user<span class="class">.email</span> <span class="string">"email@example.com"</span></span><br></pre></td></tr></table></figure></p>
+<p>注意<code>git config</code>命令的<code>--global</code>参数，用了这个参数，表示你这台机器上所有的Git仓库都会使用这个配置，当然也可以对某个仓库指定不同的用户名和Email地址</p>
+<h5 id="初始化一个Git仓库：">初始化一个Git仓库：</h5><p>切换到所需目录输入<code>git init</code><br><a id="more"></a></p>
+<h5 id="把文件放到Git仓库：">把文件放到Git仓库：</h5><p>1.用<code>git add [filename]</code> 把文件添加到仓库。<br>2.用<code>git commit -m&quot;[commit message]&quot;</code> 把文件提交给仓库。[commit message]表示本次提交的说明。<br>3.注：可以多次<code>add</code>不同的文件，通过<code>commit</code>一次提交多个文件</p>
+<h5 id="修改文件后：">修改文件后：</h5><p>运行<code>git status</code> 掌握仓库工作状态<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$ git status</span><br><span class="line">On branch master</span><br><span class="line">Changes not staged for <span class="operator"><span class="keyword">commit</span>:</span><br><span class="line">  (<span class="keyword">use</span> <span class="string">"git add &lt;file&gt;..."</span> <span class="keyword">to</span> <span class="keyword">update</span> what will be committed)</span><br><span class="line">  (<span class="keyword">use</span> <span class="string">"git checkout -- &lt;file&gt;..."</span> <span class="keyword">to</span> discard changes <span class="keyword">in</span> working <span class="keyword">directory</span>)</span><br><span class="line"></span><br><span class="line">	modified:   readme.txt</span><br><span class="line"></span><br><span class="line"><span class="keyword">no</span> changes added <span class="keyword">to</span> <span class="keyword">commit</span> (<span class="keyword">use</span> <span class="string">"git add"</span> <span class="keyword">and</span>/<span class="keyword">or</span> <span class="string">"git commit -a"</span>)</span></span><br></pre></td></tr></table></figure></p>
+<p>运行<code>git diff</code> 具体查看修改内容<br><figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$ git diff</span><br><span class="line">diff --git a/readme.txt b/readme.txt</span><br><span class="line">index 46d49bf..9247db6 100644</span><br><span class="line"><span class="header">--- a/readme.txt</span></span><br><span class="line"><span class="header">+++ b/readme.txt</span></span><br><span class="line"><span class="chunk">@@ -1,2 +1,2 @@</span></span><br><span class="line"><span class="deletion">-Git is a version control system.</span></span><br><span class="line"><span class="addition">+Git is a distributed version control system.</span></span><br><span class="line"> Git is free software.</span><br></pre></td></tr></table></figure></p>
+<h5 id="提交修改后的文件：">提交修改后的文件：</h5><p><code>git add</code> 此时键入<code>git diff</code>，若已添加所有修改后的文件到仓库，不会显示内容。<br>运行<code>git ststus</code> 显示将要提交的文件<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="operator"><span class="keyword">commit</span></span><br><span class="line"><span class="keyword">On</span> branch <span class="keyword">master</span></span><br><span class="line">Changes <span class="keyword">to</span> be committed:</span><br><span class="line">  (<span class="keyword">use</span> <span class="string">"git reset HEAD &lt;file&gt;..."</span> <span class="keyword">to</span> unstage)</span><br><span class="line"></span><br><span class="line">	modified:   readme.txt</span></span><br></pre></td></tr></table></figure></p>
+<p>用<code>git commit -m&quot;[commit message]&quot;</code> 提交文件</p>
+<h5 id="查看历史记录">查看历史记录</h5><p><code>git log</code><br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">log</span></span><br><span class="line">commit <span class="number">60774</span>ec30fa7472336effe456f9488dc6e0c3f06</span><br><span class="line">Author: BlackLine &lt;*********@gmail.com&gt;</span><br><span class="line">Date:   Wed Dec <span class="number">23</span> <span class="number">13</span>:<span class="number">21</span>:<span class="number">03</span> <span class="number">2015</span> +<span class="number">0800</span></span><br><span class="line"></span><br><span class="line">    append GPL</span><br><span class="line"></span><br><span class="line">commit <span class="number">1f</span>430a9b0526e613a338794b35d15e9fdf8f7643</span><br><span class="line">Author: BlackLine &lt;*********@gmail.com&gt;</span><br><span class="line">Date:   Wed Dec <span class="number">23</span> <span class="number">12</span>:<span class="number">34</span>:<span class="number">00</span> <span class="number">2015</span> +<span class="number">0800</span></span><br><span class="line"></span><br><span class="line">    add distributed</span><br><span class="line"></span><br><span class="line">commit baad47381430610afc98beff43934c7a544f20d4</span><br><span class="line">Author: BlackLine &lt;*********@gmail.com&gt;</span><br><span class="line">Date:   Wed Dec <span class="number">23</span> <span class="number">12</span>:<span class="number">10</span>:<span class="number">36</span> <span class="number">2015</span> +<span class="number">0800</span></span><br><span class="line"></span><br><span class="line">    wrote a readme file</span><br></pre></td></tr></table></figure></p>
+<p>如果觉得输出信息太多，加上<code>--pretty=oneline</code><br><figure class="highlight dns"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git log --pretty=oneline</span><br><span class="line">60774ec30fa<span class="number">7472336</span>effe<span class="number">456f9488</span>dc<span class="number">6e0c3f06</span> append GPL</span><br><span class="line"><span class="number">1f430a9</span>b<span class="number">0526e613</span>a<span class="number">338794b35</span>d15e9fdf8f7643 add distributed</span><br><span class="line">baad<span class="number">47381430610</span>afc98beff<span class="number">43934c7a54</span>4f20d4 wrote a readme file</span><br></pre></td></tr></table></figure></p>
+<h5 id="版本回退">版本回退</h5><p>如果要将当前版本回退到上一个版本<br><code>git reset --hard HEAD^</code><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="operator"><span class="keyword">reset</span> <span class="comment">--hard HEAD^</span></span><br><span class="line"><span class="keyword">HEAD</span> <span class="keyword">is</span> <span class="keyword">now</span> <span class="keyword">at</span> <span class="number">1</span>f430a9 <span class="keyword">add</span> <span class="keyword">distributed</span></span></span><br></pre></td></tr></table></figure></p>
+<p>用<code>git log</code>查看版本状态<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">log</span></span><br><span class="line">commit <span class="number">1f</span>430a9b0526e613a338794b35d15e9fdf8f7643</span><br><span class="line">Author: BlackLine &lt;jessywuzq@gmail.com&gt;</span><br><span class="line">Date:   Wed Dec <span class="number">23</span> <span class="number">12</span>:<span class="number">34</span>:<span class="number">00</span> <span class="number">2015</span> +<span class="number">0800</span></span><br><span class="line"></span><br><span class="line">    add distributed</span><br><span class="line"></span><br><span class="line">commit baad47381430610afc98beff43934c7a544f20d4</span><br><span class="line">Author: BlackLine &lt;jessywuzq@gmail.com&gt;</span><br><span class="line">Date:   Wed Dec <span class="number">23</span> <span class="number">12</span>:<span class="number">10</span>:<span class="number">36</span> <span class="number">2015</span> +<span class="number">0800</span></span><br><span class="line"></span><br><span class="line">    wrote a readme file</span><br></pre></td></tr></table></figure></p>
+<p>如果误操作了，如果要恢复到新版本，就必须知道<code>append GPL</code>的commmit id<br><code>git reflog</code>记录了每一次命令<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ git reflog</span><br><span class="line"><span class="number">1f</span>430a9 HEAD@&#123;<span class="number">0</span>&#125;: reset: moving to HEAD^</span><br><span class="line"><span class="number">60774</span>ec HEAD@&#123;<span class="number">1</span>&#125;: commit: append GPL</span><br><span class="line"><span class="number">1f</span>430a9 HEAD@&#123;<span class="number">2</span>&#125;: commit: add distributed</span><br><span class="line">baad473 HEAD@&#123;<span class="number">3</span>&#125;: commit (initial): wrote a readme file</span><br></pre></td></tr></table></figure></p>
+<p>使用<code>git reset --hard 60774ec</code>就能回复最新版本<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="operator"><span class="keyword">reset</span> <span class="comment">--hard 60774ec</span></span><br><span class="line"><span class="keyword">HEAD</span> <span class="keyword">is</span> <span class="keyword">now</span> <span class="keyword">at</span> <span class="number">60774</span>ec append GPL</span></span><br></pre></td></tr></table></figure></p>
+<p>Git的版本回退速度非常快，因为Git在内部有个指向当前版本的<code>HEAD</code>指针，当你回退版本的时候，Git仅仅是把HEAD从指向<code>append GPL</code>：<br><img src="/images/GitReset01.jpg" alt=""><br>改为指向<code>add distributed</code>：<br><img src="/images/GitReset02.jpg" alt=""><br>然后顺便把工作区的文件更新了。所以你让<code>HEAD</code>指向哪个版本号，你就把当前版本定位在哪。</p>
+<h5 id="工作区与暂存区">工作区与暂存区</h5><h6 id="工作区（Working_Directory）">工作区（Working Directory）</h6><p>在电脑里能看到的目录，一个文件夹就是一个工作区</p>
+<h6 id="版本库（Repository）">版本库（Repository）</h6><p>工作区里有一个隐藏目录<code>.git</code>，是Git的版本库<br>Git版本库里最重要的是称为<code>index</code>的暂存区,还有Git自动创建的第一个分支<code>master</code>以及指向<code>master</code>的一个指针<code>HEAD</code>。<br><img src="/images/GitRepository01.jpg" alt=""><br>把文件添加到Git版本库是分两步执行的：<br>1.<code>git add</code>添加文件，把文件修改提交到暂存区<br>2.<code>git commit</code>提交修改，把暂存区的所有内容提交到当前分支</p>
+<hr>
+<p>修改readme.txt 新建一个LICENSE文件<br>用<code>git status</code>查看状态<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">$ git status</span><br><span class="line">On branch master</span><br><span class="line">Changes not staged for <span class="operator"><span class="keyword">commit</span>:</span><br><span class="line">  (<span class="keyword">use</span> <span class="string">"git add &lt;file&gt;..."</span> <span class="keyword">to</span> <span class="keyword">update</span> what will be committed)</span><br><span class="line">  (<span class="keyword">use</span> <span class="string">"git checkout -- &lt;file&gt;..."</span> <span class="keyword">to</span> discard changes <span class="keyword">in</span> working <span class="keyword">directory</span>)</span><br><span class="line"></span><br><span class="line">	modified:   readme.txt</span><br><span class="line"></span><br><span class="line">Untracked files:</span><br><span class="line">  (<span class="keyword">use</span> <span class="string">"git add &lt;file&gt;..."</span> <span class="keyword">to</span> <span class="keyword">include</span> <span class="keyword">in</span> what will be committed)</span><br><span class="line"></span><br><span class="line">	LICENSE</span><br><span class="line"></span><br><span class="line"><span class="keyword">no</span> changes added <span class="keyword">to</span> <span class="keyword">commit</span> (<span class="keyword">use</span> <span class="string">"git add"</span> <span class="keyword">and</span>/<span class="keyword">or</span> <span class="string">"git commit -a"</span>)</span></span><br></pre></td></tr></table></figure></p>
+<p>Git显示readme.txt被修改了，LICENSE从未被添加过，所以状态为<code>Untracked</code><br>将两个文件添加后<br><figure class="highlight vhdl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ git status</span><br><span class="line"><span class="keyword">On</span> branch master</span><br><span class="line">Changes <span class="keyword">to</span> be committed:</span><br><span class="line">  (<span class="keyword">use</span> <span class="string">"git reset HEAD &lt;file&gt;..."</span> <span class="keyword">to</span> unstage)</span><br><span class="line"></span><br><span class="line">	<span class="keyword">new</span> <span class="keyword">file</span>:   LICENSE</span><br><span class="line">	modified:   readme.txt</span><br></pre></td></tr></table></figure></p>
+<p>暂存区变成：<br><img src="/images/GitRepository02.jpg" alt=""><br>所以<code>git add</code>命令就是把要提交的修改放到暂存区<br>然后执行<code>git commit</code>把暂存区所有修改提交到分支<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="operator"><span class="keyword">commit</span> -<span class="keyword">m</span><span class="string">"understand how stage works"</span></span><br><span class="line">[<span class="keyword">master</span> <span class="number">46</span>fb205] understand how stage works</span><br><span class="line"> <span class="number">2</span> files <span class="keyword">changed</span>, <span class="number">2</span> insertions(+)</span><br><span class="line"> <span class="keyword">create</span> <span class="keyword">mode</span> <span class="number">100644</span> LICENSE</span></span><br></pre></td></tr></table></figure></p>
+<p>一旦提交，若没对工作区作修改，那工作区就是“干净的”<br><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git status</span><br><span class="line">On branch <span class="keyword">master</span></span><br><span class="line"><span class="title">nothing</span> to commit, working directory clean</span><br></pre></td></tr></table></figure></p>
+<p>暂存区就没有任何内容<br><img src="/images/GitRepository03.jpg" alt=""></p>
+</span>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2015/12/21/Write-in-Html/" rel="next" title="Write-in-Html">
+                <i class="fa fa-chevron-left"></i> Write-in-Html
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+        </div>
+
+        
+
+
+        
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+      </div>
+
+      
+        
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" src="/images/avatar.jpg" alt="Jessy Wu" itemprop="image"/>
+          <p class="site-author-name" itemprop="name">Jessy Wu</p>
+        </div>
+        <p class="site-description motion-element" itemprop="description"></p>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">18</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          <div class="site-state-item site-state-categories">
+            
+              <span class="site-state-item-count">0</span>
+              <span class="site-state-item-name">分类</span>
+              
+          </div>
+
+          <div class="site-state-item site-state-tags">
+            <a href="/tags">
+              <span class="site-state-item-count">21</span>
+              <span class="site-state-item-name">标签</span>
+              </a>
+          </div>
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/black-line" target="_blank">
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/jessywuzq" target="_blank">
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.zhihu.com/people/hei-xian-75" target="_blank">
+                  
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+      </section>
+
+      
+
+    </div>
+  </aside>
+
+
+      
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2015</span>
+  <span class="with-love">
+    <i class="icon-next-heart fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jessy Wu</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+
+      </div>
+    </footer>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+
+  
+    
+    
+
+  
+
+
+  
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.1"></script>
+
+
+  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.1"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+<script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+<script type="text/javascript" src="/js/motion.js?v=0.4.5.1" id="motion.global"></script>
+
+
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  
+<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.5.1" id="bootstrap.scrollspy.custom"></script>
+
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    motionMiddleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+      if (CONFIG.sidebar === 'post') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
+
+  <script type="text/javascript" src="/js/bootstrap.js"></script>
+
+  
+  
+
+  
+  
+
+</body>
+</html>
