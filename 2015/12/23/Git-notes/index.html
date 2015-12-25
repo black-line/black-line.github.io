@@ -71,7 +71,7 @@
 <meta property="og:image" content="imwzq.com/images/Branch05.png">
 <meta property="og:image" content="imwzq.com/images/conflict01.png">
 <meta property="og:image" content="imwzq.com/images/conflict02.png">
-<meta property="og:updated_time" content="2015-12-24T09:54:59.000Z">
+<meta property="og:updated_time" content="2015-12-24T15:31:24.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git学习笔记">
 <meta name="twitter:description" content="安装【Windows】msysgit是Windows版的Git，从http://msysgit.github.io/下载，然后按默认选项安装即可安装完后输入12$ git config --global user.name &quot;Your Name&quot;$ git config --global user.email &quot;email@example.com&quot;
@@ -279,9 +279,9 @@
 </ol>
 <p>然后<code>git commit</code><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="operator"><span class="keyword">commit</span> -<span class="keyword">m</span><span class="string">"remove test.txt"</span></span><br><span class="line">[<span class="keyword">master</span> <span class="number">3</span>fb8529] remove <span class="keyword">test</span>.txt</span><br><span class="line"> <span class="number">1</span> <span class="keyword">file</span> <span class="keyword">changed</span>, <span class="number">0</span> insertions(+), <span class="number">0</span> deletions(-)</span><br><span class="line"> <span class="keyword">delete</span> <span class="keyword">mode</span> <span class="number">100644</span> <span class="keyword">test</span>.txt</span></span><br></pre></td></tr></table></figure></p>
 <ol>
-<li>误删<br><code>git checkout -- test.txt</code><br><code>git checkout</code>其实是用版本库里的版本替换工作区的版本，无论工作区是修改还是删除，都可以“一键还原”。<h5 id="远程库">远程库</h5><h6 id="添加远程库">添加远程库</h6>1.添加远程库地址<br><code>git remote add origin https://github.com/black-line/LearnGit.gut</code><br>或者<code>git remote add origin git@github.com:black-line/LearnGit.git</code><br>2.把本地库所有内容推送到远程库上<code>git push -u origin master</code><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Counting objects: <span class="number">17</span>, done.</span><br><span class="line">Delta compression <span class="keyword">using</span> up to <span class="number">4</span> threads.</span><br><span class="line">Compressing objects: <span class="number">100</span>% (<span class="number">12</span>/<span class="number">12</span>), done.</span><br><span class="line">Writing objects: <span class="number">100</span>% (<span class="number">17</span>/<span class="number">17</span>), <span class="number">1.38</span> KiB | <span class="number">0</span> bytes/s, done.</span><br><span class="line">Total <span class="number">17</span> (delta <span class="number">4</span>), reused <span class="number">0</span> (delta <span class="number">0</span>)</span><br><span class="line">To git@github.com:black-line/LearnGit.git</span><br><span class="line"> * [<span class="keyword">new</span> branch]      master -&gt; master</span><br><span class="line">Branch master <span class="built_in">set</span> up to track remote branch master from origin.</span><br></pre></td></tr></table></figure>
-</li>
+<li>误删<br><code>git checkout -- test.txt</code><br><code>git checkout</code>其实是用版本库里的版本替换工作区的版本，无论工作区是修改还是删除，都可以“一键还原”。</li>
 </ol>
+<h5 id="远程库">远程库</h5><h6 id="添加远程库">添加远程库</h6><p>1.添加远程库地址<br><code>git remote add origin https://github.com/black-line/LearnGit.gut</code><br>或者<code>git remote add origin git@github.com:black-line/LearnGit.git</code><br>2.把本地库所有内容推送到远程库上<code>git push -u origin master</code><br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Counting objects: <span class="number">17</span>, done.</span><br><span class="line">Delta compression <span class="keyword">using</span> up to <span class="number">4</span> threads.</span><br><span class="line">Compressing objects: <span class="number">100</span>% (<span class="number">12</span>/<span class="number">12</span>), done.</span><br><span class="line">Writing objects: <span class="number">100</span>% (<span class="number">17</span>/<span class="number">17</span>), <span class="number">1.38</span> KiB | <span class="number">0</span> bytes/s, done.</span><br><span class="line">Total <span class="number">17</span> (delta <span class="number">4</span>), reused <span class="number">0</span> (delta <span class="number">0</span>)</span><br><span class="line">To git@github.com:black-line/LearnGit.git</span><br><span class="line"> * [<span class="keyword">new</span> branch]      master -&gt; master</span><br><span class="line">Branch master <span class="built_in">set</span> up to track remote branch master from origin.</span><br></pre></td></tr></table></figure></p>
 <p>把本地库的内容推送到远程，用<code>git push</code>命令，实际上是把当前分支<code>master</code>推送到远程。<br>由于远程库是空的，第一次推送<code>master</code>分支时，加上了<code>-u</code>参数，Git不但会把本地的<code>master</code>分支内容推送的远程新的<code>master</code>分支，还会把本地的<code>master</code>分支和远程的<code>master</code>分支关联起来，在以后的推送或者拉取时就可以简化命令。</p>
 <ul>
 <li>现在只要<code>$ git push origin master</code>就能将本地<code>master</code>分支修改推送到GitHub上<h6 id="从远程库克隆">从远程库克隆</h6><code>$ git clone git@github.com:black-line/gitskills.git</code><figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ git clone git<span class="annotation">@github</span>.<span class="string">com:</span>black-line/gitskills.git</span><br><span class="line">Cloning into <span class="string">'gitskills'</span>...</span><br><span class="line"><span class="string">remote:</span> Counting <span class="string">objects:</span> <span class="number">3</span>, done.</span><br><span class="line"><span class="string">remote:</span> Total <span class="number">3</span> (delta <span class="number">0</span>), reused <span class="number">0</span> (delta <span class="number">0</span>), pack-reused <span class="number">0</span></span><br><span class="line">Receiving <span class="string">objects:</span> <span class="number">100</span>% (<span class="number">3</span>/<span class="number">3</span>), done.</span><br><span class="line">Checking connectivity... done.</span><br></pre></td></tr></table></figure>
@@ -333,6 +333,10 @@
           </div>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2015/12/24/Ubuntu-notes/" rel="prev" title="Ubuntu 常用">
+                Ubuntu 常用 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -391,7 +395,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">18</span>
+              <span class="site-state-item-count">20</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
