@@ -35,7 +35,7 @@
 <link href="/css/main.css?v=0.4.5.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="superise,百度," />
+  <meta name="keywords" content="Hexo,next" />
 
 
 
@@ -51,18 +51,19 @@
 
 
 
-<meta name="description">
+<meta name="description" content="#注释单行注释分号;将两个语句连接在一行中print(&amp;quot;1&amp;quot;);print(&amp;quot;2&amp;quot;)反斜杠\继续上一行(推荐使用括号)
+123if (weather_is_hot == 1) and \        (shark_warnings == 0):    print(&quot;HELP&quot;)">
 <meta property="og:type" content="article">
-<meta property="og:title" content="彩蛋">
-<meta property="og:url" content="imwzq.com/2015/10/30/Easter-Eggs/index.html">
+<meta property="og:title" content="寒假开始啦～～">
+<meta property="og:url" content="imwzq.com/2016/01/23/Learn-Python-Again/index.html">
 <meta property="og:site_name" content="BlackLine">
-<meta property="og:description">
-<meta property="og:image" content="imwzq.com/images/baidurecruiter.png">
-<meta property="og:image" content="imwzq.com/images/dtox.png">
-<meta property="og:updated_time" content="2015-11-18T12:44:48.000Z">
+<meta property="og:description" content="#注释单行注释分号;将两个语句连接在一行中print(&amp;quot;1&amp;quot;);print(&amp;quot;2&amp;quot;)反斜杠\继续上一行(推荐使用括号)
+123if (weather_is_hot == 1) and \        (shark_warnings == 0):    print(&quot;HELP&quot;)">
+<meta property="og:updated_time" content="2016-01-24T02:11:23.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="彩蛋">
-<meta name="twitter:description">
+<meta name="twitter:title" content="寒假开始啦～～">
+<meta name="twitter:description" content="#注释单行注释分号;将两个语句连接在一行中print(&amp;quot;1&amp;quot;);print(&amp;quot;2&amp;quot;)反斜杠\继续上一行(推荐使用括号)
+123if (weather_is_hot == 1) and \        (shark_warnings == 0):    print(&quot;HELP&quot;)">
 
 
 
@@ -74,7 +75,7 @@
   };
 </script>
 
-  <title> 彩蛋 | BlackLine </title>
+  <title> 寒假开始啦～～ | BlackLine </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -196,7 +197,7 @@
             
             
               
-                彩蛋
+                寒假开始啦～～
               
             
           </h1>
@@ -205,8 +206,8 @@
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2015-10-30T10:03:55+08:00" content="2015-10-30">
-              2015-10-30
+            <time itemprop="dateCreated" datetime="2016-01-23T20:27:50+08:00" content="2016-01-23">
+              2016-01-23
             </time>
           </span>
 
@@ -229,37 +230,34 @@
       
 
       
-        <span itemprop="articleBody"><p><img src="/images/baidurecruiter.png" alt=""><br><a id="more"></a><br><img src="/images/dtox.png" alt=""></p>
+        <span itemprop="articleBody"><p><strong>#注释</strong>单行注释<br><strong>分号;</strong>将两个语句连接在一行中<br><code>print(&quot;1&quot;);print(&quot;2&quot;)</code><br><strong>反斜杠\</strong>继续上一行(推荐使用括号)</p>
+<figure class="highlight livescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (weather_is_hot == <span class="number">1</span>) <span class="keyword">and</span> <span class="string">\</span></span><br><span class="line">        (shark_warnings == <span class="number">0</span>):</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">"HELP"</span>)</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<p><strong>多行书写</strong><br>在使用闭合操作符时，单一语句可以跨多行。<br>例如在含有小括号<code>()</code>，中括号<code>[]</code>，花括号<code>{}</code>时可以多行书写。在三引号<code>&#39;&#39;&#39;</code>包括下的字符串也可以跨行书写</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">'''Hello</span><br><span class="line">everyone'''</span>)</span><br></pre></td></tr></table></figure>
+<p>输出<br><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">Hello</span></span><br><span class="line">everyone</span><br></pre></td></tr></table></figure></p>
+<p>同时赋值<br><code>weather_is_hot, shark_warnings = (1,0)</code><br><strong>变量赋值</strong><br>对象通过引用传递。在赋值时，不管这个对象是新创建的，还是一个已经存在的，都是将该对象的引用赋值给变量<br>赋值语句没有返回值，可以链式赋值<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">x = <span class="number">1</span></span><br><span class="line">y = x = x + <span class="number">1</span></span><br><span class="line"><span class="function"><span class="title">print</span><span class="params">(x,y)</span></span></span><br></pre></td></tr></table></figure></p>
+<p>输出<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">2</span> <span class="number">2</span></span><br></pre></td></tr></table></figure></p>
+<p>交换赋值<br>Pyrhon在赋值前已经事先对x和y的新值做了计算<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">x, y = <span class="number">1</span>, <span class="number">2</span></span><br><span class="line"><span class="function"><span class="title">print</span><span class="params">(x,y)</span></span></span><br><span class="line">x, y = y, x</span><br><span class="line"><span class="function"><span class="title">print</span><span class="params">(x, y)</span></span></span><br></pre></td></tr></table></figure></p>
+<p>输出<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span> <span class="number">2</span></span><br><span class="line"><span class="number">2</span> <span class="number">1</span></span><br></pre></td></tr></table></figure></p>
 </span>
       
     </div>
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/superise/" rel="tag">#superise</a>
-          
-            <a href="/tags/百度/" rel="tag">#百度</a>
-          
-        </div>
-      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/10/28/Open-Broadcaster-Software-with-Linux/" rel="next" title="Linux下OBS安装">
-                <i class="fa fa-chevron-left"></i> Linux下OBS安装
+              <a href="/2015/12/25/Notice/" rel="next" title="Notice">
+                <i class="fa fa-chevron-left"></i> Notice
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2015/10/30/vim-mark/" rel="prev" title="vi命令">
-                vi命令 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
