@@ -12,7 +12,7 @@
 <meta property="og:site_name" content="Hi ~">
 <meta property="og:description" content="基础xx = input(“提示语句”)   xx为字符串类型 int(xx)转换为intdir(__builtins__) 在Shell查看Bilt-in Functionhelp(input) 查看帮助print(“let’s go”) 不用转义r’C:\now’ 原始字符串，\n不转义 原理是自动添加反斜杠 但原始字符串末尾不能加(可以r’xxx’+’\‘)print(&amp;quot;qwew&amp;">
 <meta property="og:image" content="www.imwzq.com/images/PythonRe.png">
-<meta property="og:updated_time" content="2015-12-16T13:24:01.251Z">
+<meta property="og:updated_time" content="2017-03-14T12:41:25.281Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python学习笔记">
 <meta name="twitter:description" content="基础xx = input(“提示语句”)   xx为字符串类型 int(xx)转换为intdir(__builtins__) 在Shell查看Bilt-in Functionhelp(input) 查看帮助print(“let’s go”) 不用转义r’C:\now’ 原始字符串，\n不转义 原理是自动添加反斜杠 但原始字符串末尾不能加(可以r’xxx’+’\‘)print(&amp;quot;qwew&amp;">
@@ -91,7 +91,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h3><p>xx = input(“提示语句”)   xx为字符串类型 int(xx)转换为int<br>dir(__builtins__) 在Shell查看Bilt-in Function<br>help(input) 查看帮助<br>print(“let’s go”) 不用转义<br>r’C:\now’ 原始字符串，\n不转义 原理是自动添加反斜杠 但原始字符串末尾不能加(可以r’xxx’+’\‘)<br><code>print(&quot;qwew&quot;, len(each),end=&#39; &#39;)</code> 结尾空格<br>长字符串(三引号)<br>str = ‘’’<br>xx<br>xxxxx<br>xx<br>‘’’ 自动添加\n 可在Shell看出<br>逻辑操作符<br><code>and</code> 等同于 <code>&amp;</code> <code>or</code> <code>not</code><br>类型转换<br><code>int()</code> <code>float()</code> <code>str()</code><br>运算<br><code>/</code>真正除法 <code>//</code>取整 <code>**</code> 幂运算<br>三元操作符</p>
+        <h3 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h3><p>xx = input(“提示语句”)   xx为字符串类型 int(xx)转换为int<br>dir(__builtins__) 在Shell查看Bilt-in Function<br>help(input) 查看帮助<br>print(“let’s go”) 不用转义<br>r’C:\now’ 原始字符串，\n不转义 原理是自动添加反斜杠 但原始字符串末尾不能加(可以r’xxx’+’\‘)<br><code>print(&quot;qwew&quot;, len(each),end=&#39; &#39;)</code> 结尾空格<br>长字符串(三引号)<br>str = ‘’’<br>xx<br>xxxxx<br>xx<br>‘’’ 自动添加\n 可在Shell看出<br><a id="more"></a><br>逻辑操作符<br><code>and</code> 等同于 <code>&amp;</code> <code>or</code> <code>not</code><br>类型转换<br><code>int()</code> <code>float()</code> <code>str()</code><br>运算<br><code>/</code>真正除法 <code>//</code>取整 <code>**</code> 幂运算<br>三元操作符</p>
 <pre><code>x,y=4,5
 if x &lt; y:
     small=x
@@ -246,7 +246,7 @@ else:
 </tr>
 </tbody>
 </table>
-<a id="more"></a>
+<!--more-->
 <p><img src="/images/PythonRe.png" alt=""><br>(.+)? 无限贪  .+? 不贪</p>
 <h3 id="os"><a href="#os" class="headerlink" title="os"></a>os</h3><p><code>os.remove(path)</code> -删除文件(import os)<br><code>os.rmdir(path, *, dir_fd=None)</code> -删除目录。只适用于目录是空的，否则，引起OSError异常。若递归删除目录，调用shutil.rmtree()<br><code>os.path.isdir(path)</code> -如果目录存在返回true<br><code>os.mkdir()</code> -创建一个名为path目录，若存在返回OSError<br><code>os.makedirs(name, mode=0o777, exist_ok=False)</code> -递归创建目录，若存在返回OSError<br><code>os.chdir(path)</code> -切换到path目录<br><code>os.getcwd()</code> -返回当前工作目录的字符串<br><code>os.path.join(path, *paths)</code> -智能联结一个或多个path 返回值是路径的串联和<em>path的任何成员与一个目录分隔符(The return value is the concatenation of path and any members of </em>paths with exactly one directory separator (os.sep) following each non-empty part except the last, meaning that the result will only end in a separator if the last part is empty. If a component is an absolute path, all previous components are thrown away and joining continues from the absolute path component.)</p>
 
