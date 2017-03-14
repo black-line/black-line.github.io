@@ -246,42 +246,14 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <a id="more"></a>
-<h5 id="UFW-Ubuntu-防火墙"><a href="#UFW-Ubuntu-防火墙" class="headerlink" title="UFW(Ubuntu 防火墙)"></a>UFW(Ubuntu 防火墙)</h5><p>因为有一个部署在阿里云上的虚拟主机，现在开始用了，要注意<strong>安全</strong>，开始研究firewall。环境还是Ubuntu。</p>
+        <h5 id="UFW-Ubuntu-防火墙"><a href="#UFW-Ubuntu-防火墙" class="headerlink" title="UFW(Ubuntu 防火墙)"></a>UFW(Ubuntu 防火墙)</h5><p>因为有一个部署在阿里云上的虚拟主机，现在开始用了，要注意<strong>安全</strong>，开始研究firewall。环境还是Ubuntu。</p>
 <p>Linux原始的防火墙工具iptables由于过于繁琐,所以ubuntu系统默认提供了一个基于iptable之上的防火墙工具ufw。</p>
 <h6 id="基础设置"><a href="#基础设置" class="headerlink" title="基础设置"></a>基础设置</h6><p>一般用户，只需如下设置：<br>1.安装<br>$ sudo apt-get install ufw<br>2.启用<br>$ sudo ufw enable<br>$ sudo ufw default deny<br>运行以上两条命令后，开启了防火墙，并在系统启动时自动开启。关闭所有外部对本机的访问，但本机访问外部正常。<br>3.查看防火墙状态<br>$ sudo ufw status</p>
-<h5 id="deb包"><a href="#deb包" class="headerlink" title=".deb包"></a>.deb包</h5><p>一种预编译软件包。deb包中除了包含已编译的软件，通常还包括软件的拷贝路径、对其它软件包的依赖关系记录、一个比较通用的配置文件以及软件的描述、版本、作者、类别、占用空间等信息。<br>deb软件包命名遵行如下约定：<br>soft_ver-rev_arch.deb<br>soft为软件包名称，ver为软件版本号，rev为Ubuntu修订版本号，arch为目标架构名称。</p>
-<ul>
-<li>dpkg -i package.deb        安装包</li>
-<li>dpkg -r package               删除包</li>
-<li>dpkg -P package               删除包(包括配置文件)</li>
-<li>dpkg -L package        列出与该包关联的文件</li>
-<li>dpkg -l package        显示该包的版本</li>
-<li>dpkg –unpack package.deb     解开deb包的内容</li>
-<li>dpkg -S keyword        搜索所属的包内容</li>
-<li>dpkg -l            列出当前已安装的包</li>
-<li>dpkg -c package.deb        列出deb包的内容</li>
-<li>dpkg –configure package    配置包</li>
-</ul>
-<h5 id="apt命令"><a href="#apt命令" class="headerlink" title="apt命令"></a>apt命令</h5><ul>
-<li>$ apt-cache search package                        搜索软件包</li>
-<li>$ apt-cache show package                         获取包的相关信息(说明、大小、版本)</li>
-<li>$ sudo apt-get intsall package                        安装包</li>
-<li>$ sudo apt-get intsall package –reinstall        重新安装包</li>
-<li>$ sudo apt-get -f install                               修复安装</li>
-<li>$ sudo apt-get remove package                           删除包</li>
-<li>$ sudo apt-get remove package –purge                   删除包，包括配置文件等</li>
-<li>$ sudo apt-get update                                   更新源</li>
-<li>$ sudo apt-get upgrade                                  更新已安装的包</li>
-<li>$ sudo apt-get dist-upgrade                             升级系统</li>
-<li>$ apt-cache depends package                             了解使用该包依赖哪些包</li>
-<li>$ apt-cache redepends package                           查看该包被哪些包依赖</li>
-<li>$ sudo apt-get build-dep package                        安装相关的编译环境</li>
-<li>$ apt-get source package                                下载该包的源代码</li>
-<li>$ sudo apt-get clean &amp;&amp; sudo apt-get autoclean          清理无用的包</li>
-<li>$ sudo apt-get check                                    检查是否有损坏的依赖</li>
-</ul>
-
+        
+          <p class="article-more-link">
+            <a href="/2015/12/24/Ubuntu-notes/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
