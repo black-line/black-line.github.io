@@ -55,9 +55,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -91,46 +91,17 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h5 id="Last-updated-2017-03-15"><a href="#Last-updated-2017-03-15" class="headerlink" title="Last updated: 2017-03-15"></a>Last updated: 2017-03-15</h5><h3 id="Based-on-Ubuntu-16-04LTS"><a href="#Based-on-Ubuntu-16-04LTS" class="headerlink" title="Based on Ubuntu 16.04LTS"></a>Based on Ubuntu 16.04LTS</h3><hr>
-<h4 id="amule"><a href="#amule" class="headerlink" title="amule"></a>amule</h4><p><a href="http://www.amule.org/" target="_blank" rel="external">link</a><br>-&gt;<code>$ sudo apt-get install amule</code><br><strong>TO BE CONTIUNE&gt;&gt;&gt;</strong> removed  </p>
-<h4 id="android-studio"><a href="#android-studio" class="headerlink" title="android studio"></a>android studio</h4><p><a href="http://sourcedigit.com/19447-19447/" target="_blank" rel="external">link</a><br>Once Java is installed, run the following commands to install Android Studio:<br>-&gt;<code>$ sudo add-apt-repository ppa:paolorotolo/android-studio</code><br>-&gt;<code>$ sudo apt-get update</code><br>-&gt;<code>$ sudo apt-get install android-studio</code><br>If “Error: Unable to run mksdcard SDK tool” appeared<br>-&gt;<code>$ sudo apt-get install lib32stdc++6</code>   </p>
-<h4 id="chrome"><a href="#chrome" class="headerlink" title="chrome"></a>chrome</h4><p><a href="http://ubuntuportal.com/2014/04/how-to-install-google-chrome-web-browser-in-ubuntu-14-04-lts-trusty-tahr.html" target="_blank" rel="external">link</a><br>-&gt;<code>$ wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -</code><br>-&gt;<code>$ sudo sh -c &#39;echo &quot;deb [arch=amd64] https://dl.google.com/linux/chrome/deb/ stable main&quot; &gt;&gt; /etc/apt/sources.list.d/google-chrome.list&#39;</code><br>-&gt;<code>$ sudo apt-get update &amp;&amp; sudo apt-get install -f</code><br>-&gt;<code>$ sudo apt-get install google-chrome-stable</code>  </p>
-<h4 id="clion"><a href="#clion" class="headerlink" title="clion"></a>clion</h4><p><a href="https://www.jetbrains.com/help/clion/" target="_blank" rel="external">link</a><br>-&gt;<code>$ wget https://www.jetbrains.com/clion/download/download-thanks.html</code><br><em>unpack</em>-&gt;<code>$ tar xfz /home/watermelon/Downloads/CLion-*</code>-&gt;……-&gt;<code>$ sh *.sh</code>    </p>
-<h4 id="ffvpn"><a href="#ffvpn" class="headerlink" title="ffvpn"></a>ffvpn</h4><p><a href="http://www.feifan-vpn.net/download-linux" target="_blank" rel="external">link</a><br>-&gt;<code>$ tar -zxvf THE-DOWNLOADED-TAR-GZ</code><br>-&gt;<code>$ sudo vim /etc/ffvpn.conf</code><br>user YOUR-ACCOUNT-NAME<br>pass YOUR-PASSWORD<br>-&gt;<code>$ ./ffvpn login</code><br>-&gt;<code>$ ./ffvpn list</code><br>-&gt;<code>$ ./ffvpn list &quot;usa&quot;</code><br>-&gt;<code>$ ./ffvpn connect &quot;California 13&quot;</code><br><strong>Please choose protocol [udp/tcp/lwip/socks5]: socks5</strong><br>close google-chrome<br>-&gt;<code>$ google-chrome --proxy-server=&quot;socks5://127.0.0.1:1080&quot;</code>  </p>
-<h4 id="git"><a href="#git" class="headerlink" title="git"></a>git</h4><p><a href="https://www.digitalocean.com/community/tutorials/how-to-install-git-on-ubuntu-16-04" target="_blank" rel="external">link</a><br>-&gt;<code>$ sudo apt-get update</code><br>-&gt;<code>$ sudo apt-get install git</code><br>-&gt;<code>$ git config --global user.name &quot;Your Name&quot;</code><br>-&gt;<code>$ git config --global user.email &quot;youremail@domain.com&quot;</code><br>-&gt;<code>$ git config --list</code>  </p>
-<h4 id="hadoop-2-7-2-compile"><a href="#hadoop-2-7-2-compile" class="headerlink" title="hadoop-2.7.2-compile"></a>hadoop-2.7.2-compile</h4><p>install java7(may cause error with java8)<br>-&gt;<code>$ sudo add-apt-repository ppa:webupd8team/java</code><br>-&gt;<code>$ sudo apt-get update</code><br>-&gt;<code>$ sudo apt-get install oracle-java8-installer</code><br>install maven<br>-&gt;<code>$ sudo apt-get install maven</code><br>-&gt;<code>$ mvn --version</code><br>install dependciii<br>-&gt;<code>$ sudo apt-get install g++ autoconf automake libtool cmake zlib1g-dev pkg-config libssl-dev</code><br>install openssh<br>-&gt;<code>$ sudo apt-get install openssh-server</code><br>install Protocol Buffer<br>-&gt;<code>$ wget ftp://ftp.netbsd.org/pub/pkgsrc/distfiles/protobuf-2.5.0.tar.gz -O protobuf-2.5.0.tar.gz</code><br>-&gt;<code>$ tar xvf protobuf-2.5.0.tar.gz</code><br>-&gt;<code>$ cd protobuf-2.5.0/</code><br>-&gt;<code>$ ./configure</code><br>-&gt;<code>$ make</code><br>-&gt;<code>$ make check</code><br>-&gt;<code>$ sudo make install</code><br>-&gt;<code>$ sudo ldconfig</code>(!important)<br>compile hadoop<br>In order to prevent the Java memory overflow within the compilation process, we need add the following environment variables<br>-&gt;<code>$ vi /etc/profile</code><br><code>export MAVEN_OPTS=&quot;-Xmx2048m -XX:MaxPermSize=512m&quot;</code><br>-&gt;<code>$ source /etc/profile</code>  </p>
-<p>-&gt;<code>$ wget http://apache.01link.hk/hadoop/common/hadoop-2.7.2/hadoop-2.7.2-src.tar.gz -O hadoop-2.7.2-src.tar.gz</code>(not the only source)<br>-&gt;<code>$ tar xvf hadoop-2.7.2-src.tar.gz</code><br>-&gt;<code>$ cd hadoop-2.7.2-src/</code>  </p>
-<p>-&gt;<code>$ mvn clean package -Pdist,native -DskipTests -Dtar</code>  </p>
-<h4 id="hexo"><a href="#hexo" class="headerlink" title="hexo"></a>hexo</h4><p><a href="https://hexo.io/docs/" target="_blank" rel="external">link</a><br>-&gt;<code>$ sudo apt-get install git</code><br>-&gt;<code>$ wget -qO- https://raw.githubusercontent.com/creationix/nvm/master/install.sh | sh</code><br>Once nvm is installed, restart the terminal and run the following command to install Node.js.<br>-&gt;<code>$ nvm install stable</code><br>-&gt;<code>$ npm install -g hexo-cli</code><br>there are two warnings:<br>npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@^1.0.0 (node_modules/hexo-cli/node_modules/chokidar/node_modules/fsevents):<br>npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.1.1: wanted {“os”:”darwin”,”arch”:”any”} (current: {“os”:”linux”,”arch”:”x64”})  </p>
-<p>-&gt;<code>$</code>   </p>
-<h4 id="hit-oslab"><a href="#hit-oslab" class="headerlink" title="hit-oslab"></a>hit-oslab</h4><p><a href="http://www.cnblogs.com/tradoff/p/5693710.html" target="_blank" rel="external">link</a>  </p>
-<h4 id="hosts"><a href="#hosts" class="headerlink" title="hosts"></a>hosts</h4><p>-&gt; <a href="https://github.com/racaljk/hosts" target="_blank" rel="external">https://github.com/racaljk/hosts</a><br>or <a href="https://raw.githubusercontent.com/racaljk/hosts/master/hosts" target="_blank" rel="external">https://raw.githubusercontent.com/racaljk/hosts/master/hosts</a><br>-&gt; copy all<br>-&gt;<code>$ cd /etc</code><br>-&gt;<code>$ sudo cp hosts hosts.bak</code><br>-&gt;<code>$ sudo vi hosts</code><br>-&gt;…… (restart)   <a href="https://www.google.com/ncr" target="_blank" rel="external">https://www.google.com/ncr</a>  </p>
-<h4 id="htop"><a href="#htop" class="headerlink" title="htop"></a>htop</h4><p><a href="http://www.howtogeek.com/howto/ubuntu/using-htop-to-monitor-system-processes-on-linux/" target="_blank" rel="external">link1</a><br><a href="http://www.howtogeek.com/107217/how-to-manage-processes-from-the-linux-terminal-10-commands-you-need-to-know/" target="_blank" rel="external">link2</a><br>-&gt;<code>$ sudo apt-get install htop</code>  </p>
-<h4 id="ibus-pinyin"><a href="#ibus-pinyin" class="headerlink" title="ibus-pinyin"></a>ibus-pinyin</h4><p><a href="http://www.jb51.net/os/Ubuntu/161244.html" target="_blank" rel="external">link</a><br>-&gt;<code>$ sudo apt-get install ibus-pinyin</code><br>-&gt; restart<br>-&gt; System Settings-&gt; Text Entry-&gt; press “+”-&gt; find Chinese(Pinyin)(IBus)<br>-&gt; press “add”   </p>
-<h4 id="java8"><a href="#java8" class="headerlink" title="java8"></a>java8</h4><p><a href="https://www.unixmen.com/installing-java-jrejdk-ubuntu-16-04/" target="_blank" rel="external">link1</a><br><a href="http://sourcedigit.com/19575-install-oracle-java-on-ubuntu-16-04-via-terminal/" target="_blank" rel="external">link2</a><br>Before you begin the installation, run the following command to verify the version of Java already installed on the system.  </p>
-<p>$ java -version  </p>
-<p>-&gt;<code>$ sudo add-apt-repository ppa:webupd8team/java</code><br>-&gt;<code>$ sudo apt-get update</code><br>-&gt;<code>$ sudo apt-get install oracle-java8-installer</code><br>If you have more than one different flavors of Java installed, we can find appropriate path for java version we want to make default<br>-&gt;<code>$ sudo update-alternatives --config java</code><br>Open and edit /etc/profile file<br>-&gt;<code>$ sudo vim /etc/profile</code><br>Put following line in last line of the file, copy jre path from previous command:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">export JAVA_HOME=&quot;/usr/lib/jvm/java-8-oracle&quot;  </div><div class="line">export PATH=&quot;$&#123;PATH&#125;:$&#123;JAVA_HOME&#125;/bin&quot;</div></pre></td></tr></table></figure></p>
-<p>-&gt;<code>$ source /etc/profile</code><br>Verify default JAVA_HOME is effectively modified or not<br>-&gt;<code>$ echo $JAVA_HOME</code>  </p>
-<h4 id="latex"><a href="#latex" class="headerlink" title="latex"></a>latex</h4><p><code>$ sudo apt-get install texlive-full texmaker</code>  </p>
-<h4 id="matlab"><a href="#matlab" class="headerlink" title="matlab"></a>matlab</h4><p><a href="http://blog.csdn.net/lcx543576178/article/details/51376008" target="_blank" rel="external">link1</a><br>-&gt;<code>$ sudo ln -s /usr/local/MATLAB/R2015b/bin/matlab   /usr/local/bin/matlab</code>  </p>
-<h4 id="my-cloud-ex2-ultra"><a href="#my-cloud-ex2-ultra" class="headerlink" title="my cloud ex2 ultra"></a>my cloud ex2 ultra</h4><p>For WD My Cloud, there is no official support for  Ubuntu or any other Linux distros. But setting up it quite easy.<br>Make sure You have connected power adapter &amp; LAN cables to it. If You open Your router config, You will see WD My cloud in client list. Make note of its IP address. If You want You can assign a static IP also.<br>Next step is to install NFS client package. NFS(Network File System) allows a system to share directories and files with others over a network. By using NFS, users and programs can access files on remote systems almost as if they were local files. So, update your packages &amp; install nfs-common package.<br>-&gt;<code>$ sudo apt-get update</code><br>-&gt;<code>$ sudo apt-get install nfs-common</code><br>-&gt;<code>$ showmount -e &lt;ip-address&gt;</code><br>-&gt;<code>$ sudo mount -o rw,soft,intr,nfsvers=3 &lt;ip&gt;:&lt;folder-to-mount&gt; &lt;path-to-mount&gt;</code><br>(sudo mount -o rw,soft,intr,nfsvers=3 192.168.1.5:/mnt/HD/HD_a2/jessywu ~/wdmceu/)  </p>
-<h4 id="opencv"><a href="#opencv" class="headerlink" title="opencv"></a>opencv</h4><p><a href="http://docs.opencv.org/2.4.13/doc/tutorials/introduction/linux_install/linux_install.html#linux-installation" target="_blank" rel="external">link</a>  </p>
-<h4 id="opengl"><a href="#opengl" class="headerlink" title="opengl"></a>opengl</h4><p><a href="http://www.jianshu.com/p/e4a90503d4a6" target="_blank" rel="external">link</a><br>-&gt;<code>$ sudo apt-get install build-essential libgl1-mesa-dev</code><br>-&gt;<code>$ sudo apt-get install freeglut3-dev</code><br>-&gt;<code>$ sudo apt-get install libglew-dev libsdl2-dev libsdl2-image-dev libglm-dev libfreetype6-dev</code>  </p>
-<h4 id="pppoe"><a href="#pppoe" class="headerlink" title="pppoe"></a>pppoe</h4><p>-&gt;<code>$ sudo pppoeconf</code>  </p>
-<h4 id="python"><a href="#python" class="headerlink" title="python"></a>python</h4><p><a href="https://virtualenv.pypa.io/en/latest/userguide/" target="_blank" rel="external">link1</a><br><a href="http://idroot.net/linux/install-pip-ubuntu-16-04/" target="_blank" rel="external">link2</a><br><a href="http://docs.python-guide.org/en/latest/dev/virtualenvs/" target="_blank" rel="external">link3</a><br>-&gt;<code>$ sudo apt install python-pip</code><br>-&gt;<code>$ sudo -H pip install virtualenv</code><br>-&gt;<code>$ virtualenv -p /usr/bin/python3.5 venv</code><br>-&gt;<code>$ source venv/bin/activate</code><br>-&gt;<code>$ deactivate</code><br>way to duplicate virtualenv<br>go into your original virtualenv, and run:<br>-&gt;<code>$ pip freeze &gt; requirements.txt</code><br>activate your new virtualenv, and run:<br>-&gt;<code>$ pip install -r requirements.txt</code>  </p>
-<h4 id="rar"><a href="#rar" class="headerlink" title="rar"></a>rar</h4><p><a href="http://www.cnblogs.com/lotusve/archive/2012/05/16/2503388.html" target="_blank" rel="external">link</a><br>-&gt;<code>$ sudo apt-get install rar</code><br>-&gt;<code>$ sudo apt-get install unrar</code><br><code>rar x FileName.rar</code><br><code>rar a FileName.rar DirName</code>  </p>
-<h4 id="tree"><a href="#tree" class="headerlink" title="tree"></a>tree</h4><p>-&gt;<code>$ sudo apt-get install tree</code>  </p>
-<h4 id="turboC3"><a href="#turboC3" class="headerlink" title="turboC3"></a>turboC3</h4><p><a href="http://forum.ubuntu.org.cn/viewtopic.php?t=69330" target="_blank" rel="external">link</a><br>run the following commands in DOSBox Emulator<br><code>mount c ~/dosapp</code><br><code>c:</code><br><code>cd tc\bin</code><br><code>tc</code><br>exit dosbox<br><code>exit</code>  </p>
-<h4 id="ufw"><a href="#ufw" class="headerlink" title="ufw"></a>ufw</h4><p><a href="http://www.cnblogs.com/xiaofengkang/archive/2011/10/22/2220888.html" target="_blank" rel="external">link1</a><br>-&gt;<code>$ sudo apt-get install ufw</code><br>-&gt;<code>$ sudo ufw enable</code><br>-&gt;<code>$ sudo ufw default deny</code>  </p>
-<h4 id="virtualbox"><a href="#virtualbox" class="headerlink" title="virtualbox"></a>virtualbox</h4><p><a href="http://ubuntuhandbook.org/index.php/2016/07/virtualbox-5-1-released/" target="_blank" rel="external">link1</a><br><a href="https://www.virtualbox.org/wiki/Linux_Downloads" target="_blank" rel="external">link2</a><br>-&gt;<code>$ sudo apt-get install dkms</code><br>-&gt;<code>$ sudo apt remove virtualbox virtualbox-5.0 virtualbox-4.*</code><br>-&gt;<code>$ sudo sh -c &#39;echo &quot;deb http://download.virtualbox.org/virtualbox/debian xenial contrib&quot; &gt;&gt; /etc/apt/sources.list.d/virtualbox.list&#39;</code><br>-&gt;<code>$ wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -</code><br>(B9F8 D658 297A F3EF C18D  5CDF A2F6 83C5 2980 AECF)<br>-&gt;<code>$ sudo apt update</code><br>-&gt;<code>$ sudo apt install virtualbox-5.1</code>  </p>
-<h4 id="vs-code"><a href="#vs-code" class="headerlink" title="vs code"></a>vs code</h4><p><a href="https://code.visualstudio.com/docs/setup/linux" target="_blank" rel="external">link1</a><br>-&gt;<code>$ curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor &gt; microsoft.gpg</code><br>-&gt;<code>$ sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg</code><br>-&gt;<code>$ sudo sh -c &#39;echo &quot;deb [arch=amd64] http://packages.microsoft.com/repos/vscode stable main&quot; &gt; /etc/apt/sources.list.d/vscode.list&#39;</code><br>-&gt;<code>$ sudo apt-get update</code><br>-&gt;<code>$ sudo apt-get install code</code>  </p>
-<h4 id="wifi"><a href="#wifi" class="headerlink" title="wifi"></a>wifi</h4><p>-&gt; System Settings-&gt; Software&amp;Updates-&gt; Additional Drivers-&gt;……  </p>
-<h4 id="wine"><a href="#wine" class="headerlink" title="wine"></a>wine</h4><p>-&gt;<code>$ sudo add-apt-repository ppa:ubuntu-wine/ppa</code><br>-&gt;<code>$ sudo apt-get update</code><br>-&gt;<code>$ sudo apt-get install wine1.8</code>  </p>
-<h4 id="xmind"><a href="#xmind" class="headerlink" title="xmind"></a>xmind</h4><p><a href="http://www.xmind.net/download/linux/" target="_blank" rel="external">link1</a><br>-&gt;<code>$ sudo apt-get update</code><br>-&gt;<code>$ sudo dpkg -i xmind-xx-xx-xxxx.deb</code><br>-&gt;<code>$ sudo apt-get -f install</code>  </p>
-
+<h4 id="amule"><a href="#amule" class="headerlink" title="amule"></a>amule</h4><p><a href="http://www.amule.org/">link</a><br>-&gt;<code>$ sudo apt-get install amule</code><br><strong>TO BE CONTIUNE&gt;&gt;&gt;</strong> removed  </p>
+<h4 id="android-studio"><a href="#android-studio" class="headerlink" title="android studio"></a>android studio</h4><p><a href="http://sourcedigit.com/19447-19447/">link</a><br>Once Java is installed, run the following commands to install Android Studio:<br>-&gt;<code>$ sudo add-apt-repository ppa:paolorotolo/android-studio</code><br>-&gt;<code>$ sudo apt-get update</code><br>-&gt;<code>$ sudo apt-get install android-studio</code><br>If “Error: Unable to run mksdcard SDK tool” appeared<br>-&gt;<code>$ sudo apt-get install lib32stdc++6</code><br>
+        
+          <p class="article-more-link">
+            <a href="/2017/03/15/ubuntu-configuration-guide/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/03/15/ubuntu-configuration-guide/" data-id="cj0anxsgy0010ver6fo7h6ndo" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/03/15/ubuntu-configuration-guide/" data-id="cj0anxsgy0010ver6fo7h6ndo" class="article-share-link">Partager</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ubuntu/">ubuntu</a></li></ul>
@@ -173,7 +144,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/02/03/Vacation-notes/" data-id="cj0anxsgt000tver6u7dzbyns" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/02/03/Vacation-notes/" data-id="cj0anxsgt000tver6u7dzbyns" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -215,7 +186,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/01/23/Learn-Python-Again/" data-id="cj0anxsfz0009ver6jr8vd3xp" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/01/23/Learn-Python-Again/" data-id="cj0anxsfz0009ver6jr8vd3xp" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -252,7 +223,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/12/25/Notice/" data-id="cj0anxsg3000cver6j67rr8uf" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/12/25/Notice/" data-id="cj0anxsg3000cver6j67rr8uf" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -295,7 +266,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/12/24/Ubuntu-notes/" data-id="cj0anxsgq000sver681yz6yti" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/12/24/Ubuntu-notes/" data-id="cj0anxsgq000sver681yz6yti" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -338,7 +309,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/12/23/Git-notes/" data-id="cj0anxsfq0004ver67ea7z0hh" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/12/23/Git-notes/" data-id="cj0anxsfq0004ver67ea7z0hh" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -379,7 +350,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/12/21/Write-in-Html/" data-id="cj0anxsgv000xver6e83uiuph" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/12/21/Write-in-Html/" data-id="cj0anxsgv000xver6e83uiuph" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -420,7 +391,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/12/19/Photography-Basics/" data-id="cj0anxsgc000jver6vg3erjk9" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/12/19/Photography-Basics/" data-id="cj0anxsgc000jver6vg3erjk9" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -461,7 +432,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/12/05/Wireshark-notes/" data-id="cj0anxsgu000vver6a1nf1tal" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/12/05/Wireshark-notes/" data-id="cj0anxsgu000vver6a1nf1tal" class="article-share-link">Partager</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/notes/">notes</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/wireshark/">wireshark</a></li></ul>
@@ -509,7 +480,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/12/02/Spider-notes/" data-id="cj0anxsgj000over6fgkh6wc9" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/12/02/Spider-notes/" data-id="cj0anxsgj000over6fgkh6wc9" class="article-share-link">Partager</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/notes/">notes</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/spider/">spider</a></li></ul>
@@ -535,7 +506,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
+    <h3 class="widget-title">Mot-clés</h3>
     <div class="widget">
       <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/BGM/">BGM</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Command-Line/">Command Line</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Eclipse/">Eclipse</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Github/">Github</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Html/">Html</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Js/">Js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/">Linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Md/">Md</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OBS/">OBS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Start/">Start</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Ubuntu/">Ubuntu</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/douyu/">douyu</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/notes/">notes</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pppd拨号/">pppd拨号</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/">python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/spider/">spider</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/superise/">superise</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ubuntu/">ubuntu</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vi/">vi</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/wireshark/">wireshark</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/百度/">百度</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/结构体/">结构体</a></li></ul>
     </div>
@@ -545,7 +516,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
+    <h3 class="widget-title">Nuage de mot-clés</h3>
     <div class="widget tagcloud">
       <a href="/tags/BGM/" style="font-size: 10px;">BGM</a> <a href="/tags/Command-Line/" style="font-size: 10px;">Command Line</a> <a href="/tags/Eclipse/" style="font-size: 10px;">Eclipse</a> <a href="/tags/Github/" style="font-size: 10px;">Github</a> <a href="/tags/Html/" style="font-size: 10px;">Html</a> <a href="/tags/Js/" style="font-size: 10px;">Js</a> <a href="/tags/Linux/" style="font-size: 15px;">Linux</a> <a href="/tags/Md/" style="font-size: 10px;">Md</a> <a href="/tags/OBS/" style="font-size: 10px;">OBS</a> <a href="/tags/Start/" style="font-size: 10px;">Start</a> <a href="/tags/Ubuntu/" style="font-size: 10px;">Ubuntu</a> <a href="/tags/douyu/" style="font-size: 10px;">douyu</a> <a href="/tags/notes/" style="font-size: 20px;">notes</a> <a href="/tags/pppd拨号/" style="font-size: 10px;">pppd拨号</a> <a href="/tags/python/" style="font-size: 10px;">python</a> <a href="/tags/spider/" style="font-size: 10px;">spider</a> <a href="/tags/superise/" style="font-size: 10px;">superise</a> <a href="/tags/ubuntu/" style="font-size: 10px;">ubuntu</a> <a href="/tags/vi/" style="font-size: 10px;">vi</a> <a href="/tags/wireshark/" style="font-size: 10px;">wireshark</a> <a href="/tags/百度/" style="font-size: 10px;">百度</a> <a href="/tags/结构体/" style="font-size: 10px;">结构体</a>
     </div>
@@ -564,7 +535,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">Articles récents</h3>
     <div class="widget">
       <ul>
         
@@ -601,7 +572,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2017 Jessy Wu<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
