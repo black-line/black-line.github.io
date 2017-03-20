@@ -270,6 +270,133 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/12/24/Ubuntu-notes/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jessy Wu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar_2.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hi ~">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2015/12/24/Ubuntu-notes/" itemprop="url">
+                  Ubuntu 常用
+                </a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2015-12-24T18:43:45+08:00">
+                2015-12-24
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h5 id="UFW-Ubuntu-防火墙"><a href="#UFW-Ubuntu-防火墙" class="headerlink" title="UFW(Ubuntu 防火墙)"></a>UFW(Ubuntu 防火墙)</h5><p>因为有一个部署在阿里云上的虚拟主机，现在开始用了，要注意<strong>安全</strong>，开始研究firewall。环境还是Ubuntu。</p>
+<p>Linux原始的防火墙工具iptables由于过于繁琐,所以ubuntu系统默认提供了一个基于iptable之上的防火墙工具ufw。</p>
+<h6 id="基础设置"><a href="#基础设置" class="headerlink" title="基础设置"></a>基础设置</h6><p>一般用户，只需如下设置：<br>1.安装<br>$ sudo apt-get install ufw<br>2.启用<br>$ sudo ufw enable<br>$ sudo ufw default deny<br>运行以上两条命令后，开启了防火墙，并在系统启动时自动开启。关闭所有外部对本机的访问，但本机访问外部正常。<br>3.查看防火墙状态<br>$ sudo ufw status</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2015/12/24/Ubuntu-notes/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/12/23/Git-notes/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -763,136 +890,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/12/02/Spider-notes/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Jessy Wu">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar_2.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hi ~">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2015/12/02/Spider-notes/" itemprop="url">
-                  Spider学习笔记
-                </a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2015-12-02T20:43:42+08:00">
-                2015-12-02
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h3 id="import-urllib-request"><a href="#import-urllib-request" class="headerlink" title="import urllib.request"></a>import urllib.request</h3><p><a href="https://docs.python.org/3/library/urllib.request.html#module-urllib.request">import urllib.request</a> -a urllib.request module uses HTTP/1.1 and includes Connection:close header in its HTTP requests.</p>
-<p><code>urllib.request.urlopen(url, data=None, [timeout, ]*, cafile=None, capath=None, cadefault=False, context=None)</code><br>返回http.client.HTTPResponse 对象<br>也可以作为<code>context manager</code>有以下方法</p>
-<ol>
-<li>geturl() — 返回资源检索网址，经常用来检查是否有<strong>重定向</strong></li>
-<li>info() — 返回<strong>meta-information</strong>例如 headers</li>
-<li>getcode() –  返回HTTP <strong>status code</strong>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2015/12/02/Spider-notes/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -942,7 +939,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">22</span>
+                <span class="site-state-item-count">23</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>
